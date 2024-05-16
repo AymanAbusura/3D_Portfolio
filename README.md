@@ -10,4 +10,4 @@
 - Tailwind CSS
 - i18next
 
-![photo_2024-05-16 17 43 00](https://github.com/AymanAbusura/3D_Portfolio/assets/113180347/ed599b29-5717-4bfb-99d7-2c20de91c8c9)
+![My Image](../3d_portfolio/src/assets/bg.png)
