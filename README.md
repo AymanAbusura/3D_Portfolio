@@ -10,4 +10,4 @@
 - Tailwind CSS
 - i18next
 
-![My Image](../3d_portfolio/src/assets/bg.png)
+![My Image](bg.png)
