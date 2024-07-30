@@ -9,6 +9,8 @@ import {
     reactjs,
     redux,
     tailwind,
+    nodejs,
+    mongodb,
     nextjs,
     git,
     figma,
@@ -18,7 +20,7 @@ import {
     nozzum,
     leadhunters,
     coursera,
-    udemy,
+    // udemy,
     diagram,
     ecommerce,
     fitness,
@@ -94,14 +96,14 @@ import {
       name: "Tailwind CSS",
       icon: tailwind,
     },
-    // {
-    //   name: "Node JS",
-    //   icon: nodejs,
-    // },
-    // {
-    //   name: "MongoDB",
-    //   icon: mongodb,
-    // },
+    {
+      name: "Node JS",
+      icon: nodejs,
+    },
+    {
+      name: "MongoDB",
+      icon: mongodb,
+    },
     {
       name: "Next JS",
       icon: nextjs,
@@ -126,18 +128,17 @@ import {
   
   const experiences = [
     {
-      title: "Technical Support",
+      title: "Technical Support Engineer",
       company_name: "Shahin Computer Est.",
       location: "Amman, Jordan",
       icon: shahin,
       // iconBg: "#E6DEDD",
       iconBg: "#fff",
-      date: "Jul 2018 - Sep 2018",
+      date: "Jul 2018 - Jul 2019",
       points: [
-        "Technical Support/Trainee.",
-        // "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        // "Implementing responsive design and ensuring cross-browser compatibility.",
-        // "Participating in code reviews and providing constructive feedback to other developers.",
+        "Research and identify solutions to software and hardware issues.",
+        "Diagnose and troubleshoot technical issues, including account setup and network configuration.",
+        "Follow up with clients to ensure their IT systems are fully functional after troubleshooting.",
       ],
     },
     {
@@ -147,12 +148,12 @@ import {
       icon: nozzum,
       // iconBg: "#E6DEDD",
       iconBg: "#fff",
-      date: "Mar 2020 - Jun 2020",
+      date: "Mar 2020 - Jun 2021",
       points: [
-        // "Developing and maintaining web applications using React.js and other related technologies.",
-        // "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        // "Implementing responsive design and ensuring cross-browser compatibility.",
-        // "Participating in code reviews and providing constructive feedback to other developers.",
+        "Contribute to all stages of software development lifecycl.",
+        "Analyze user requirements to define business objectives.",
+        "Manage Java and Java EE application development.",
+        "Develop documentation to help users.",
       ],
     },
     {
@@ -164,8 +165,9 @@ import {
       iconBg: "#fff",
       date: "Jul 2021 - Jan 2022",
       points: [
-        "Flexible member.",
-        "Working on 4 tasks.",
+        "Flexible member working on 4 tasks.",
+        "Quickly checking and handling illegal content on the platform.",
+        "Collect the illegal key words and add & maintain the regional sensitive vocabulary periodically.",
       ],
     },
     {
@@ -174,35 +176,35 @@ import {
       location: "Belgorod, Russia",
       icon: leadhunters,
       iconBg: "black",
-      date: "Nov 2022 - Present",
+      date: "Oct 2022 - Present",
       points: [
-        "Setting up API.",
-        "Checking the functionality of scripts.",
-        "Editing code in Keitaro.",
-        "Adding and editing in Beget.",
+        "Set up APIs and ensured the functionality of scripts.",
+        "Edited code in Keitaro and managed web projects in Beget.",
+        "Collaborated with the team to enhance web applications using HTML, CSS, JS.",
+        "Creating and editing landing pages.",
       ],
     },
   ];
   
   const certifications = [
-    {
-      title: "SEO 2021: Complete SEO Training + SEO for WordPress Websites",
-      company_name: "Udemy",
-      icon: udemy,
-      // iconBg: "#E6DEDD",
-      iconBg: "#fff",
-      date: "Mar 2021",
-      link: import.meta.env.VITE_APP_CERTIFICATION_LINK1,
-    },
-    {
-      title: "Team Leadership & Team Management Skills",
-      company_name: "Udemy",
-      icon: udemy,
-      // iconBg: "#E6DEDD",
-      iconBg: "#fff",
-      date: "Dec 2021",
-      link: import.meta.env.VITE_APP_CERTIFICATION_LINK2,
-    },
+    // {
+    //   title: "SEO 2021: Complete SEO Training + SEO for WordPress Websites",
+    //   company_name: "Udemy",
+    //   icon: udemy,
+    //   // iconBg: "#E6DEDD",
+    //   iconBg: "#fff",
+    //   date: "Mar 2021",
+    //   link: import.meta.env.VITE_APP_CERTIFICATION_LINK1,
+    // },
+    // {
+    //   title: "Team Leadership & Team Management Skills",
+    //   company_name: "Udemy",
+    //   icon: udemy,
+    //   // iconBg: "#E6DEDD",
+    //   iconBg: "#fff",
+    //   date: "Dec 2021",
+    //   link: import.meta.env.VITE_APP_CERTIFICATION_LINK2,
+    // },
     {
       title: "Meta Front-End Developer Professional Certificate",
       company_name: "Coursera",
