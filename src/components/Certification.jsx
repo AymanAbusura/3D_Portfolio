@@ -23,6 +23,7 @@ import { useTranslation } from 'react-i18next';
         contentStyle={{
           background: "#1d1836",
           color: "#fff",
+          cursor: "pointer",
         }}
         contentArrowStyle={{ borderRight: "7px solid  #232631" }}
         date={certification.date}

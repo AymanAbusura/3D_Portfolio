@@ -86,7 +86,7 @@
     "work": {
         "header1": "MY WORK",
         "header2": "Projects",
-        "description": "Following projects showcases my skills. Each project is briefly described with links to code repositories. It reflects my ability to solve complex problems, work with different technologies, and manage projects effectively.",
+        "description": "Following projects showcases my skills. Each project is briefly described with links to code repositories and live demos in it. It reflects my ability to solve complex problems, work with different technologies, and manage projects effectively.",
         "work1": {
             "title": "Diagram",
             "description": "Social Media App that enable users to create and share content and participate in social networking."

@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
+import resume from '../assets/resume/Resume.pdf';
 // import { ComputersCanvas } from "./canvas";
 
 //addnew
@@ -24,9 +25,16 @@ const Hero = () => {
           <h1 className={`${styles.heroHeadText} text-white`}>
           {t("hero.greeting")} <span className='text-[#915EFF]'>{t("hero.name")}</span>
           </h1>
+
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
           {t("hero.description")}
           </p>
+
+          <button className='bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary hover:bg-blue-500'>
+            <a href={resume} download='resume'>Resume</a>
+          </button>
+
+
         </div>
       </div>
 

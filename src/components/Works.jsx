@@ -19,6 +19,7 @@ const ProjectCard = ({
   description,
   tags,
   image,
+  preview,
   source_code_link,
 }) => {
   return (
@@ -31,7 +32,7 @@ const ProjectCard = ({
         }}
         className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full'
       >
-        <div className='relative w-full h-[230px]'>
+        <div className='relative w-full h-[230px] cursor-pointer' onClick={preview ? () => window.open(preview, "_blank") : null}>
           <img
             src={image}
             alt='project_image'
@@ -46,7 +47,7 @@ const ProjectCard = ({
               <img
                 src={github}
                 alt='source code'
-                className='w-1/2 h-1/2 object-contain'
+                className='w-1/2 h-1/2 object-contain cursor-pointer'
               />
             </div>
           </div>
