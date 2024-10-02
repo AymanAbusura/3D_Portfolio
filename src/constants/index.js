@@ -26,6 +26,7 @@ import {
   fitness,
   aora,
   leadhunter,
+  xora,
   threejs,
 } from "../assets";
 
@@ -355,7 +356,7 @@ const projects = [
       },
     ],
     image: ecommerce,
-    preview: '',
+    preview: import.meta.env.VITE_APP_PROJECT_PREVIEW2,
     source_code_link: import.meta.env.VITE_APP_PROJECT_LINK3,
   },
   {
@@ -395,6 +396,27 @@ const projects = [
     image: leadhunter,
     preview: '',
     source_code_link: import.meta.env.VITE_APP_PROJECT_LINK5,
+  },
+  {
+    name: "Xora",
+    description: "XORA AI Video Editor - SaaS Landing Page.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Vite",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: xora,
+    preview: import.meta.env.VITE_APP_PROJECT_PREVIEW3,
+    source_code_link: import.meta.env.VITE_APP_PROJECT_LINK6,
   },
 ];
 

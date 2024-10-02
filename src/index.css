@@ -4,6 +4,11 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  .c-space {
+    @apply sm:px-10 px-5;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -144,6 +149,21 @@
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+/*  footer */
+.social-icon {
+  display: flex;
+  height: 3rem;
+  width: 3rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(14 14 16 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(28 28 33 / var(--tw-bg-opacity));
 }
 
 /* canvas- styles */

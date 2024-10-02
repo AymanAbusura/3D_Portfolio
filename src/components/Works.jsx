@@ -5,7 +5,7 @@ import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
-import { github } from "../assets";
+import { github, demo } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
@@ -32,7 +32,7 @@ const ProjectCard = ({
         }}
         className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full'
       >
-        <div className='relative w-full h-[230px] cursor-pointer' onClick={preview ? () => window.open(preview, "_blank") : null}>
+        <div className='relative w-full h-[230px] cursor-pointer'>
           <img
             src={image}
             alt='project_image'
@@ -50,6 +50,19 @@ const ProjectCard = ({
                 className='w-1/2 h-1/2 object-contain cursor-pointer'
               />
             </div>
+
+            {preview ? (
+                <div
+                  onClick={() => window.open(preview, "_blank")}
+                  className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
+                >
+                  <img
+                    src={demo}
+                    alt='demo preview'
+                    className='w-1/2 h-1/2 object-contain cursor-pointer'
+                  />
+                </div>
+            ) : null}
           </div>
         </div>
         

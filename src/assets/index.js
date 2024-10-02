@@ -1,14 +1,18 @@
-import logo from "./logo.svg";
-import logo2 from "./logo2.png";
-import photo from "./photo.png";
-import backend from "./backend.png";
-import creator from "./creator.png";
-import mobile from "./mobile.png";
-import web from "./web.png";
-import github from "./github.png";
-import menu from "./menu.svg";
-import close from "./close.svg";
-import translate from "./translate.png"
+import logo from "./others/logo.svg";
+import logo2 from "./others/logo2.png";
+import photo from "./others/photo.png";
+import backend from "./others/backend.png";
+import creator from "./others/creator.png";
+import mobile from "./others/mobile.png";
+import web from "./others/web.png";
+import github from "./others/github.png";
+import demo from "./others/demo.png";
+import menu from "./others/menu.svg";
+import close from "./others/close.svg";
+import translate from "./others/translate.png"
+import linkedin from "./others/linkedin.png"
+import hh from "./others/hh.png"
+import habr from "./others/habr.png"
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
@@ -33,11 +37,12 @@ import leadhunters from "./company/leadhunters.png";
 import udemy from "./company/udemy.png";
 import coursera from "./company/coursera.png";
 
-import diagram from "./diagram.png";
-import aora from "./aora.png"
-import ecommerce from "./ecommerce.png";
-import fitness from "./fitness.png";
-import leadhunter from "./leadhunter.png";
+import diagram from "./projects/diagram.png";
+import aora from "./projects/aora.png"
+import ecommerce from "./projects/ecommerce.png";
+import fitness from "./projects/fitness.png";
+import leadhunter from "./projects/leadhunter.png";
+import xora from "./projects/xora.png";
 
 
 export {
@@ -49,6 +54,7 @@ export {
   mobile,
   web,
   github,
+  demo,
   menu,
   close,
   css,
@@ -76,5 +82,9 @@ export {
   fitness,
   aora,
   leadhunter,
+  xora,
   translate,
+  linkedin,
+  hh,
+  habr,
 };
