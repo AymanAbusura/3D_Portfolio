@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ayman-portfolio.onrender.com/sitemap.xml
