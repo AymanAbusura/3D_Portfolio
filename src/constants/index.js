@@ -176,7 +176,7 @@ const experiences = [
     company_name: "LeadHunters",
     location: "Belgorod, Russia",
     icon: leadhunters,
-    iconBg: "black",
+    iconBg: "#fff",
     date: "Oct 2022 - Present",
     points: [
       "Set up APIs and ensured the functionality of scripts.",
