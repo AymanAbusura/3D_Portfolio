@@ -13,6 +13,7 @@ import translate from "./others/translate.png"
 import linkedin from "./others/linkedin.png"
 import hh from "./others/hh.png"
 import habr from "./others/habr.png"
+import telegram from "./others/telegram.png"
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
@@ -87,4 +88,5 @@ export {
   linkedin,
   hh,
   habr,
+  telegram,
 };

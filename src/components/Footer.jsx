@@ -1,4 +1,4 @@
-import { github, linkedin, hh, habr } from "../assets";
+import { github, linkedin, hh, habr, telegram } from "../assets";
 
 const Footer = () => {
     return (
@@ -21,6 +21,9 @@ const Footer = () => {
           </div>
           <div className="social-icon cursor-pointer" onClick={() => window.open(import.meta.env.VITE_APP_HABR, "_blank")}>
             <img src={habr} alt="habr" className="w-1/2 h-1/2 object-contain cursor-pointer" />
+          </div>
+          <div className="social-icon cursor-pointer" onClick={() => window.open(import.meta.env.VITE_APP_TELEGRAM, "_blank")}>
+            <img src={telegram} alt="telegram" className="w-1/2 h-1/2 object-contain cursor-pointer" />
           </div>
         </div>
   
