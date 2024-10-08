@@ -27,6 +27,8 @@ import {
   aora,
   leadhunter,
   xora,
+  tracker,
+  moportfolio,
   threejs,
 } from "../assets";
 
@@ -417,6 +419,60 @@ const projects = [
     image: xora,
     preview: import.meta.env.VITE_APP_PROJECT_PREVIEW3,
     source_code_link: import.meta.env.VITE_APP_PROJECT_LINK6,
+  },
+  {
+    name: "Tracker",
+    description: "Track your progress, motivate your efforts, and celebrate your successes - SaaS Landing Page.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "next",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "framer_motion",
+        color: "red-text-gradient",
+      },
+    ],
+    image: tracker,
+    preview: import.meta.env.VITE_APP_PROJECT_PREVIEW4,
+    source_code_link: import.meta.env.VITE_APP_PROJECT_LINK7,
+  },
+  {
+    name: "Mohanad's Portfolio",
+    description: "A 3D Marketing Portfolio describes Mohanad's expertise as a Marketer.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "vite",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "threejs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "framer_motion",
+        color: "red-text-gradient",
+      },
+    ],
+    image: moportfolio,
+    preview: import.meta.env.VITE_APP_PROJECT_PREVIEW5,
+    source_code_link: import.meta.env.VITE_APP_PROJECT_LINK8,
   },
 ];
 

@@ -44,7 +44,8 @@ import ecommerce from "./projects/ecommerce.png";
 import fitness from "./projects/fitness.png";
 import leadhunter from "./projects/leadhunter.png";
 import xora from "./projects/xora.png";
-
+import tracker from "./projects/tracker.png";
+import moportfolio from "./projects/moportfolio.png";
 
 export {
   logo,
@@ -84,6 +85,8 @@ export {
   aora,
   leadhunter,
   xora,
+  tracker,
+  moportfolio,
   translate,
   linkedin,
   hh,
