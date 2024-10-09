@@ -1,51 +1,61 @@
 {
-    "navbar": {
+    "navbar": 
+    {
         "box1": "Ayman Abusura",
         "box2": "About",
         "box3": "Work",
         "box4": "Contact"
     },
-    "hero": {
+    "hero": 
+    {
         "greeting": "Hi, I'm",
         "name": "Ayman",
         "description": "I develop web applications"
     },
-    "about": {
+    "about": 
+    {
         "header1": "INTRODUCTION",
         "header2": "Overview",
         "description":" I'm a skilled frontend developer with experience in JavaScript, and expertise in frameworks like React, Next.js and Three.js. I'm a quick learner, ready to bring any task to a successful conclusion. I can easily maintain business and professional contacts!"
     },
-    "experience": {
+    "experience": 
+    {
         "header1": "WHAT I HAVE DONE SO FAR",
         "header2": "Work Experience",
-        "job1": {
+        "job1": 
+        {
             "title": "Technical Support",
             "company": "Shahin Computer Est.",
             "location": "Amman, Jordan",
             "description": "Technical Support/Trainee.",
             "date": "Jul 2018 - Sep 2018"
         },
-        "job2": {
+        "job2": 
+        {
             "title": "Java Developer",
             "company": "Nozzum for Business Solutions",
             "location": "Amman, Jordan",
             "date": "Mar 2020 - Jun 2020"
         },
-        "job3": {
+        "job3": 
+        {
             "title": "Content Security Moderator",
             "company": "BIGO",
             "location": "Amman, Jordan",
-            "description": [
+            "description": 
+            [
                 "Flexible member.",
                 "Working on 4 tasks."
             ],
             "date": "Jul 2021 - Jan 2022"
         },
-        "job4": {
+        "job4": 
+        {
             "title": "Middle Web Developer",
             "company": "LeadHunters",
             "location": "Belgorod, Russia",
-            "description": [
+            "description": 
+            [
                 "Setting up API.",
                 "Checking the functionality of scripts.",
                 "Editing code in Keitaro.",
@@ -54,64 +64,78 @@
             "date": "Nov 2022 - Present"
         }
     },
-    "certification": {
+    "certification": 
+    {
         "header1": "WHAT I HAVE DONE SO FAR",
         "header2": "Certifications",
-        "certification1": {
+        "certification1": 
+        {
             "title": "SEO 2021: Complete SEO Training + SEO for WordPress Websites",
             "company": "Udemy",
             "date": "Mar 2021"
         },
-        "certification2": {
+        "certification2": 
+        {
             "title": "Team Leadership & Team Management Skills",
             "company": "Udemy",
             "date": "Dec 2021"
         },
-        "certification3": {
+        "certification3": 
+        {
             "title": "Meta Front-End Developer Professional Certificate",
             "company": "Coursera",
             "date": "Aug 2023"
         },
-        "certification4": {
+        "certification4": 
+        {
             "title": "Meta React Native Specialization",
             "company": "Coursera",
             "date": "Feb 2024"
         },
-        "certification5": {
+        "certification5": 
+        {
             "title": "Agile with Atlassian Jira",
             "company": "Coursera",
             "date": "Feb 2024"
         }
     },
-    "work": {
+    "work": 
+    {
         "header1": "MY WORK",
         "header2": "Projects",
         "description": "Following projects showcases my skills. Each project is briefly described with links to code repositories and live demos in it. It reflects my ability to solve complex problems, work with different technologies, and manage projects effectively.",
-        "work1": {
+        "work1": 
+        {
             "title": "Diagram",
             "description": "Social Media App that enable users to create and share content and participate in social networking."
         },
-        "work2": {
+        "work2": 
+        {
             "title": "Aora",
             "description": "Social Media App that enable users to create and share content and participate in social networking."
         },
-        "work3": {
+        "work3": 
+        {
             "title": "E-Shop",
             "description": "Online shop, browse product catalogs, create wish lists, add items to a cart, and complete purchases. It also provides payment processing, shipping, and order management capabilities."
         },
-        "work4": {
+        "work4": 
+        {
             "title": "Fitness",
             "description": "Fitness app designed to help with exercise, other types of physical training, nutrition and diet, and other ways to get fit."
         },
-        "work5": {
+        "work5": 
+        {
             "title": "LeadHunters",
             "description": "Corporate website designed for presenting a LeadHunters company."
         }
     },
-    "contact": {
+    "contact": 
+    {
         "header1": "GET IN TOUCH",
         "header2": "Contact",
-        "form": {
+        "form": 
+        {
             "field1": "Name",
             "input1": "",
             "field2": "Email",

@@ -1,7 +1,8 @@
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
-import resume from '../assets/resume/Resume.pdf';
+import resumeEnglish from '../assets/resume/ResumeEN.pdf';
+import resumeRussian from '../assets/resume/ResumeRU.pdf';
 // import { ComputersCanvas } from "./canvas";
 
 //addnew
@@ -9,7 +10,11 @@ import { useTranslation } from 'react-i18next';
 
 const Hero = () => {
   // for translation new
-  const {t} = useTranslation();
+  const {t, i18n} = useTranslation();
+
+  const currentLanguage = i18n.language;
+  const resumeLink = currentLanguage === 'RU' ? resumeRussian : resumeEnglish;
+  const resumeFileName = currentLanguage === 'RU' ? 'Resume-Russian.pdf' : 'Resume-English.pdf';
 
   return (
     <section className={`relative w-full h-screen mx-auto`}>
@@ -31,9 +36,8 @@ const Hero = () => {
           </p>
 
           <button className='bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary hover:bg-blue-500'>
-            <a href={resume} download='resume'>Resume</a>
+            <a href={resumeLink} download={resumeFileName}>Resume</a>
           </button>
-
 
         </div>
       </div>
