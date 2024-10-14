@@ -46,6 +46,7 @@ import leadhunter from "./projects/leadhunter.png";
 import xora from "./projects/xora.png";
 import tracker from "./projects/tracker.png";
 import moportfolio from "./projects/moportfolio.png";
+import trendy from "./projects/trendy.png";
 
 export {
   logo,
@@ -87,6 +88,7 @@ export {
   xora,
   tracker,
   moportfolio,
+  trendy,
   translate,
   linkedin,
   hh,

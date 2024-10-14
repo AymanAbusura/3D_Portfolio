@@ -29,6 +29,7 @@ import {
   xora,
   tracker,
   moportfolio,
+  trendy,
   threejs,
 } from "../assets";
 
@@ -277,6 +278,31 @@ const projects = [
     source_code_link: import.meta.env.VITE_APP_PROJECT_LINK1,
   },
   {
+    name: "E-Shop",
+    description: "Online shop, browse product catalogs, create wish lists, add items to a cart, and complete purchases. It also provides payment processing, shipping, and order management capabilities.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "next",
+        color: "green-text-gradient",
+      },
+      {
+        name: "stripe",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "sanity",
+        color: "purple-text-gradient",
+      },
+    ],
+    image: ecommerce,
+    preview: import.meta.env.VITE_APP_PROJECT_PREVIEW2,
+    source_code_link: import.meta.env.VITE_APP_PROJECT_LINK3,
+  },
+  {
     name: "Aora",
     description: "Social Media App that enable users to create and share content and participate in social networking.",
     tags: [
@@ -304,31 +330,6 @@ const projects = [
     image: aora,
     preview: '',
     source_code_link: import.meta.env.VITE_APP_PROJECT_LINK2,
-  },
-  {
-    name: "E-Shop",
-    description: "Online shop, browse product catalogs, create wish lists, add items to a cart, and complete purchases. It also provides payment processing, shipping, and order management capabilities.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "next",
-        color: "green-text-gradient",
-      },
-      {
-        name: "stripe",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "sanity",
-        color: "purple-text-gradient",
-      },
-    ],
-    image: ecommerce,
-    preview: import.meta.env.VITE_APP_PROJECT_PREVIEW2,
-    source_code_link: import.meta.env.VITE_APP_PROJECT_LINK3,
   },
   {
     name: "Fitness",
@@ -442,6 +443,27 @@ const projects = [
     image: moportfolio,
     preview: import.meta.env.VITE_APP_PROJECT_PREVIEW5,
     source_code_link: import.meta.env.VITE_APP_PROJECT_LINK8,
+  },
+  {
+    name: "Trendy",
+    description: "Trendy Dashboard for Ecommerce Shop.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Syncfusion",
+        color: "red-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: trendy,
+    preview: import.meta.env.VITE_APP_PROJECT_PREVIEW6,
+    source_code_link: import.meta.env.VITE_APP_PROJECT_LINK9,
   },
 ];
 
