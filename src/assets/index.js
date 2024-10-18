@@ -47,6 +47,7 @@ import xora from "./projects/xora.png";
 import tracker from "./projects/tracker.png";
 import moportfolio from "./projects/moportfolio.png";
 import trendy from "./projects/trendy.png";
+import weather from "./projects/weather.png";
 
 export {
   logo,
@@ -89,6 +90,7 @@ export {
   tracker,
   moportfolio,
   trendy,
+  weather,
   translate,
   linkedin,
   hh,

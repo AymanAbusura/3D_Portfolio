@@ -30,6 +30,7 @@ import {
   tracker,
   moportfolio,
   trendy,
+  weather,
   threejs,
 } from "../assets";
 
@@ -303,71 +304,46 @@ const projects = [
     source_code_link: import.meta.env.VITE_APP_PROJECT_LINK3,
   },
   {
-    name: "Aora",
-    description: "Social Media App that enable users to create and share content and participate in social networking.",
+    name: "Weather",
+    description: "Stay informed and prepared with Weather App, your ultimate companion for real-time weather updates and forecasts! Designed with a user-friendly interface.",
     tags: [
       {
-        name: "reactNative",
+        name: "Next",
         color: "blue-text-gradient",
       },
       {
-        name: "expo",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "appwrite",
-        color: "green-text-gradient",
-      },
-      {
-        name: "nativewind",
+        name: "tailwind",
         color: "pink-text-gradient",
       },
       {
-        name: "Animatable",
+        name: "shadcn/ui",
         color: "red-text-gradient",
       },
     ],
-    image: aora,
-    preview: '',
-    source_code_link: import.meta.env.VITE_APP_PROJECT_LINK2,
+    image: weather,
+    preview: import.meta.env.VITE_APP_PROJECT_PREVIEW7,
+    source_code_link: import.meta.env.VITE_APP_PROJECT_LINK10,
   },
   {
-    name: "Fitness",
-    description: "Fitness app designed to help with exercise, other types of physical training, nutrition and diet, and other ways to get fit.",
+    name: "Trendy",
+    description: "Trendy Dashboard for Ecommerce Shop.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "rapidAPI's",
-        color: "green-text-gradient",
+        name: "Syncfusion",
+        color: "red-text-gradient",
       },
       {
-        name: "css",
+        name: "tailwind",
         color: "pink-text-gradient",
       },
     ],
-    image: fitness,
-    preview: '',
-    source_code_link: import.meta.env.VITE_APP_PROJECT_LINK4,
-  },
-  {
-    name: "LeadHunters",
-    description: "Corporate website designed for presenting a LeadHunters company.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: leadhunter,
-    preview: '',
-    source_code_link: import.meta.env.VITE_APP_PROJECT_LINK5,
+    image: trendy,
+    preview: import.meta.env.VITE_APP_PROJECT_PREVIEW6,
+    source_code_link: import.meta.env.VITE_APP_PROJECT_LINK9,
   },
   {
     name: "Xora",
@@ -445,25 +421,71 @@ const projects = [
     source_code_link: import.meta.env.VITE_APP_PROJECT_LINK8,
   },
   {
-    name: "Trendy",
-    description: "Trendy Dashboard for Ecommerce Shop.",
+    name: "Aora",
+    description: "Social Media App that enable users to create and share content and participate in social networking.",
+    tags: [
+      {
+        name: "reactNative",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "expo",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "appwrite",
+        color: "green-text-gradient",
+      },
+      {
+        name: "nativewind",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Animatable",
+        color: "red-text-gradient",
+      },
+    ],
+    image: aora,
+    preview: '',
+    source_code_link: import.meta.env.VITE_APP_PROJECT_LINK2,
+  },
+  {
+    name: "Fitness",
+    description: "Fitness app designed to help with exercise, other types of physical training, nutrition and diet, and other ways to get fit.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "Syncfusion",
-        color: "red-text-gradient",
+        name: "rapidAPI's",
+        color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "css",
         color: "pink-text-gradient",
       },
     ],
-    image: trendy,
-    preview: import.meta.env.VITE_APP_PROJECT_PREVIEW6,
-    source_code_link: import.meta.env.VITE_APP_PROJECT_LINK9,
+    image: fitness,
+    preview: '',
+    source_code_link: import.meta.env.VITE_APP_PROJECT_LINK4,
+  },
+  {
+    name: "LeadHunters",
+    description: "Corporate website designed for presenting a LeadHunters company.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "css",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: leadhunter,
+    preview: '',
+    source_code_link: import.meta.env.VITE_APP_PROJECT_LINK5,
   },
 ];
 
