@@ -326,27 +326,6 @@ const projects = [
     source_code_link: import.meta.env.VITE_APP_PROJECT_LINK10,
   },
   {
-    name: "Trendy",
-    description: "Trendy Dashboard for Ecommerce Shop.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Syncfusion",
-        color: "red-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: trendy,
-    preview: import.meta.env.VITE_APP_PROJECT_PREVIEW6,
-    source_code_link: import.meta.env.VITE_APP_PROJECT_LINK9,
-  },
-  {
     name: "Apple iPhone15",
     description: "This project focuses on rebuilding the Apple iPhone 15 Pro website by integrating GSAP animations and 3D effects using Three.js. It provides a comprehensive tutorial on creating everything from unique animations to interactive 3D models.",
     tags: [
@@ -374,6 +353,27 @@ const projects = [
     image: apple,
     preview: import.meta.env.VITE_APP_PROJECT_PREVIEW8,
     source_code_link: import.meta.env.VITE_APP_PROJECT_LINK11,
+  },
+  {
+    name: "Trendy",
+    description: "Trendy Dashboard for Ecommerce Shop.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Syncfusion",
+        color: "red-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: trendy,
+    preview: import.meta.env.VITE_APP_PROJECT_PREVIEW6,
+    source_code_link: import.meta.env.VITE_APP_PROJECT_LINK9,
   },
   {
     name: "Xora",
