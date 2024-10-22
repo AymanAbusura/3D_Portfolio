@@ -48,6 +48,7 @@ import tracker from "./projects/tracker.png";
 import moportfolio from "./projects/moportfolio.png";
 import trendy from "./projects/trendy.png";
 import weather from "./projects/weather.png";
+import apple from "./projects/weather.png";
 
 export {
   logo,
@@ -91,6 +92,7 @@ export {
   moportfolio,
   trendy,
   weather,
+  apple,
   translate,
   linkedin,
   hh,
