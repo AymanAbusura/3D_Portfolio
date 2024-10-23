@@ -38,17 +38,17 @@ import leadhunters from "./company/leadhunters.png";
 import udemy from "./company/udemy.png";
 import coursera from "./company/coursera.png";
 
-import diagram from "./projects/diagram.png";
-import aora from "./projects/aora.png"
-import ecommerce from "./projects/ecommerce.png";
-import fitness from "./projects/fitness.png";
-import leadhunter from "./projects/leadhunter.png";
-import xora from "./projects/xora.png";
-import tracker from "./projects/tracker.png";
-import moportfolio from "./projects/moportfolio.png";
-import trendy from "./projects/trendy.png";
-import weather from "./projects/weather.png";
-import apple from "./projects/apple.png";
+import diagram from "./projects/diagram.webp";
+import aora from "./projects/aora.webp"
+import ecommerce from "./projects/ecommerce.webp";
+import fitness from "./projects/fitness.webp";
+import leadhunter from "./projects/leadhunter.webp";
+import xora from "./projects/xora.webp";
+import tracker from "./projects/tracker.webp";
+import moportfolio from "./projects/moportfolio.webp";
+import trendy from "./projects/trendy.webp";
+import weather from "./projects/weather.webp";
+import apple from "./projects/apple.webp";
 
 export {
   logo,
