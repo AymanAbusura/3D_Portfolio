@@ -19,107 +19,107 @@ import {
     apple, 
   } from "../assets";
   
-  export const getNavLinks = (t) => [
-    {
-      id: "about",
-      title: t("nav.about"), // Translation Key: nav.about
-    },
-    {
-      id: "work",
-      title: t("nav.work"),  // Translation Key: nav.work
-    },
-    {
-      id: "contact",
-      title: t("nav.contact"),  // Translation Key: nav.contact
-    },
-  ];
-  
   export const getServices = (t) => [
     {
-      title: t("about.services.webDeveloper"), // Translation Key: services.webDeveloper
+      title: t("about.services.service1"),
       icon: web,
     },
     {
-      title: t("about.services.reactDeveloper"), // Translation Key: services.reactDeveloper
+      title: t("about.services.service2"),
       icon: backend,
     },
     {
-      title: t("about.services.reactNativeDeveloper"), // Translation Key: services.reactNativeDeveloper
+      title: t("about.services.service3"),
       icon: mobile,
     },
     {
-      title: t("about.services.backendDeveloper"), // Translation Key: services.backendDeveloper
+      title: t("about.services.service4"),
       icon: backend,
     },
   ];
   
   export const getExperiences = (t) => [
     {
-      title: t("experiences.middleWebDeveloper"),
-      company_name: "LeadHunters",
-      location: "Belgorod, Russia",
+      title: t("experience.job1.title"),
+      company_name: t("experience.job1.company"),
+      location: t("experience.job1.location"),
+      about: t("experience.job1.about"),
       icon: leadhunters,
       iconBg: "#fff",
-      date: "Jan 2022 - Present",
+      date: t("experience.job1.date"),
       points: [
-        t("experiences.leadhunters.point1"),
-        t("experiences.leadhunters.point2"),
-        t("experiences.leadhunters.point3"),
-        t("experiences.leadhunters.point4"),
+        t("experience.job1.description.point1"),
+        t("experience.job1.description.point2"),
+        t("experience.job1.description.point3"),
+        t("experience.job1.description.point4"),
+        t("experience.job1.description.point5"),
+        t("experience.job1.description.point6"),
       ],
     },
     {
-      title: t("experiences.javaDeveloper"),
-      company_name: "Nozzum for Business Solutions",
-      location: "Amman, Jordan",
+      title: t("experience.job2.title"),
+      company_name: t("experience.job2.company"),
+      location: t("experience.job2.location"),
+      about: t("experience.job2.about"),
       icon: nozzum,
       iconBg: "#fff",
-      date: "Mar 2020 - Jun 2021",
+      date: t("experience.job2.date"),
       points: [
-        t("experiences.nozzum.point1"),
-        t("experiences.nozzum.point2"),
-        t("experiences.nozzum.point3"),
-        t("experiences.nozzum.point4"),
+        t("experience.job2.description.point1"),
+        t("experience.job2.description.point2"),
+        t("experience.job2.description.point3"),
+        t("experience.job2.description.point4"),
+        t("experience.job2.description.point5"),
+        t("experience.job2.description.point6"),
       ],
     },
     {
-      title: t("experiences.techSupportEngineer"),
-      company_name: "Shahin Computer Est.",
-      location: "Amman, Jordan",
+      title: t("experience.job3.title"),
+      company_name: t("experience.job3.company"),
+      location: t("experience.job3.location"),
+      about: t("experience.job3.about"),
       icon: shahin,
       iconBg: "#fff",
-      date: "Jul 2018 - Jul 2019",
+      date: t("experience.job3.date"),
       points: [
-        t("experiences.shahin.point1"),
-        t("experiences.shahin.point2"),
-        t("experiences.shahin.point3"),
+        t("experience.job3.description.point1"),
+        t("experience.job3.description.point2"),
+        t("experience.job3.description.point3"),
       ],
     },
   ];
   
   export const getCertifications = (t) => [
     {
-      title: t("certifications.metaFrontEnd"),
+      title: "Meta Front-End Developer Professional Certificate",
       company_name: "Coursera",
       icon: coursera,
       iconBg: "#fff",
-      date: "Aug 2023",
+      date: t("certification.certification1.date"),
       link: import.meta.env.VITE_APP_CERTIFICATION_LINK3,
     },
     {
-      title: t("certifications.metaReactNative"),
+      title: "Meta React Native Specialization",
       company_name: "Coursera",
       icon: coursera,
       iconBg: "#fff",
-      date: "Feb 2024",
+      date: t("certification.certification2.date"),
       link: import.meta.env.VITE_APP_CERTIFICATION_LINK4,
     },
     {
-      title: t("certifications.ibmFullStack"),
+      title: "Agile with Atlassian Jira",
       company_name: "Coursera",
       icon: coursera,
       iconBg: "#fff",
-      date: "Sep 2024",
+      date: t("certification.certification3.date"),
+      link: import.meta.env.VITE_APP_CERTIFICATION_LINK5,
+    },
+    {
+      title: "IBM Full Stack Software Developer Professional Certificate",
+      company_name: "Coursera",
+      icon: coursera,
+      iconBg: "#fff",
+      date: t("certification.certification4.date"),
       link: import.meta.env.VITE_APP_CERTIFICATION_LINK6,
     },
   ];
@@ -127,7 +127,7 @@ import {
   export const getProjects = (t) => [
     {
       name: "Diagram",
-      description: t("projects.diagram.description"),
+      description: t("works.work1.description"),
       tags: [
         { name: "react", color: "blue-text-gradient" },
         { name: "Vite", color: "blue-text-gradient" },
@@ -142,7 +142,7 @@ import {
     },
     {
         name: "E-Shop",
-        description: t("projects.E-Shop.description"),
+        description: t("works.work2.description"),
         tags: [
           { name: "react", color: "blue-text-gradient" },
           { name: "next", color: "green-text-gradient" },
@@ -155,7 +155,7 @@ import {
       },
       {
         name: "Weather",
-        description: t("projects.weather.description"),
+        description: t("works.work3.description"),
         tags: [
           { name: "Next", color: "blue-text-gradient" },
           { name: "tailwind", color: "pink-text-gradient" },
@@ -167,7 +167,7 @@ import {
       },
       {
         name: "Apple iPhone15",
-        description: t("projects.apple.description"),
+        description: t("works.work4.description"),
         tags: [
           { name: "react", color: "blue-text-gradient" },
           { name: "vite", color: "blue-text-gradient" },
@@ -181,7 +181,7 @@ import {
       },
       {
         name: "Trendy",
-        description: t("projects.trendy.description"),
+        description: t("works.work5.description"),
         tags: [
           { name: "react", color: "blue-text-gradient" },
           { name: "Syncfusion", color: "red-text-gradient" },
@@ -193,7 +193,7 @@ import {
       },
       {
         name: "Xora",
-        description: t("projects.xora.description"),
+        description: t("works.work6.description"),
         tags: [
           { name: "react", color: "blue-text-gradient" },
           { name: "Vite", color: "blue-text-gradient" },
@@ -205,7 +205,7 @@ import {
       },
       {
         name: "Tracker",
-        description: t("projects.tracker.description"),
+        description: t("works.work7.description"),
         tags: [
           { name: "react", color: "blue-text-gradient" },
           { name: "next", color: "blue-text-gradient" },
@@ -218,7 +218,7 @@ import {
       },
       {
         name: "Mohanad's Portfolio",
-        description: t("projects.portfolio.description"),
+        description: t("works.work8.description"),
         tags: [
           { name: "react", color: "blue-text-gradient" },
           { name: "vite", color: "blue-text-gradient" },
@@ -232,7 +232,7 @@ import {
       },
       {
         name: "Aora",
-        description: t("projects.aora.description"),
+        description: t("works.work9.description"),
         tags: [
           { name: "reactNative", color: "blue-text-gradient" },
           { name: "expo", color: "blue-text-gradient" },
@@ -246,7 +246,7 @@ import {
       },
       {
         name: "Fitness",
-        description: t("projects.fitness.description"),
+        description: t("works.work10.description"),
         tags: [
           { name: "react", color: "blue-text-gradient" },
           { name: "rapidAPI's", color: "green-text-gradient" },
@@ -258,7 +258,7 @@ import {
       },
       {
         name: "LeadHunters",
-        description: t("projects.leadhunters.description"),
+        description: t("works.work11.description"),
         tags: [
           { name: "react", color: "blue-text-gradient" },
           { name: "css", color: "pink-text-gradient" },

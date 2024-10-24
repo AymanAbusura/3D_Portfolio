@@ -29,7 +29,7 @@ const Navbar = () => {
         >
           <img src={logo2} alt='logo' className='w-9 h-9 object-contain' style={{ borderRadius: '1rem' }} />
           {/* <p className='text-white text-[18px] font-bold cursor-pointer flex'>Ayman Abusura &nbsp; <span className='sm:block hidden'>| Frontend Developer</span></p> */}
-          <p className='text-white text-[18px] font-bold cursor-pointer flex'>{t("navbar.box1")} &nbsp; <span className='sm:block hidden'>| Frontend Developer</span></p>
+          <p className='text-white text-[18px] font-bold cursor-pointer flex'>{t("navbar.box1")} &nbsp; <span className='sm:block hidden'>| {t("navbar.position")}</span></p>
         </Link>
         <ul className='list-none hidden sm:flex flex-row gap-10'>
           <li

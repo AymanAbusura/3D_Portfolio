@@ -2,6 +2,7 @@
     "navbar": 
     {
         "box1": "Ayman Abusura",
+        "position": "Frontend Developer",
         "box2": "About",
         "box3": "Work",
         "box4": "Contact"
@@ -10,7 +11,8 @@
     {
         "greeting": "Hi, I'm",
         "name": "Ayman",
-        "description": "I develop web applications"
+        "description": "I develop web applications",
+        "resume": "Resume"
     },
     "about": 
     {
@@ -18,10 +20,10 @@
         "header2": "Overview",
         "description": "I am a Frontend Developer with 2+ years of experience, including both commercial development and academic projects. During this time, I have mastered and successfully applied technologies such as React, TypeScript, HTML5, CSS3, JavaScript, as well as libraries and frameworks like Vite, Next.js, and Tailwind CSS. I have worked on projects ranging from creating complex landing pages and e-commerce platforms to social applications, which has significantly strengthened my skills in UI/UX and API integration. Moving forward, I plan to deepen my expertise in building complex interfaces using modern approaches such as Server-side Rendering (SSR), while also progressing towards FullStack development with a focus on integrating React with microservices. I am open to Frontend Developer positions, primarily working with React, TypeScript, Redux, NextJS, and Vite. I am available for remote work or in-office roles in Moscow, Saint Petersburg, or Krasnodar.",
         "services": {
-            "webDeveloper": "Web Developer",
-            "reactDeveloper": "React Developer",
-            "reactNativeDeveloper": "React Native Developer",
-            "backendDeveloper": "Backend Developer"
+            "service1": "Web Developer",
+            "service2": "React Developer",
+            "service3": "React Native Developer",
+            "service4": "Backend Developer"
         }
     },
     "experience": 
@@ -33,13 +35,16 @@
             "title": "Middle Web Developer",
             "company": "LeadHunters",
             "location": "Belgorod, Russia",
+            "about": "Media buying agency specializing in purchasing traffic on social networks.",
             "description": 
-            [
-                "Setting up API.",
-                "Checking the functionality of scripts.",
-                "Editing code in Keitaro.",
-                "Adding and editing in Beget."
-            ],
+            {
+                "point1": "Responsive Layout and Design: Developed and refined layouts for various devices, ensuring cross-browser and cross-platform compatibility.",
+                "point2": "API Development and Integration: Created and integrated APIs to ensure proper functionality of web applications.",
+                "point3": "Bug Fixes and Code Optimization: Identified and resolved defects, improving the overall user experience by eliminating technical errors.",
+                "point4": "Form Optimization and Enhancement: Enhanced form functionality, including [Implementation of a carousel in the form, Integration of interactive elements (doors, gifts, time, and date), and Development of an anti-duplication script for forms].",
+                "point5": "HTML, CSS, JS Development: Collaborated closely with the development team to enhance web application performance.",
+                "point6": "Content Localization: Reviewed and adapted pre-landing and landing pages for Arabic-speaking users."
+            },
             "date": "Jan 2022 - Present"
         },
         "job2": 
@@ -47,14 +52,30 @@
             "title": "Java Developer",
             "company": "Nozzum for Business Solutions",
             "location": "Amman, Jordan",
+            "about": "Specializing in the development of software solutions for businesses, especially in the financial sector. The company's main product is <Remit Flow>, designed for exchange offices and money transfers.",
+            "description": 
+            {
+                "point1": "Participated in all stages of software development: design, implementation, deployment, and support..",
+                "point2": "Analyzed requirements and contributed to achieving business goals.",
+                "point3": "Developed and maintained Java/Java EE applications with a focus on optimization and scalability.",
+                "point4": "Collaborated with teams to ensure quality and meet deadlines.",
+                "point5": "Coordinated with various departments (analytics, DevOps, support) to ensure smooth system operation and successful solution implementation.",
+                "point6": "Prepared technical documentation and provided user guidance."
+            },
             "date": "Mar 2020 - Jun 2021"
         },
         "job3": 
         {
-            "title": "Technical Support",
+            "title": "Technical Support Specialist",
             "company": "Shahin Computer Est.",
             "location": "Amman, Jordan",
-            "description": "Technical Support Specialist.",
+            "about": "IT services company. Provides domain registration, hosting, web design and development, and also offers accounting systems and technical support.",
+            "description": 
+            {
+                "point1": "Troubleshooting and resolving software and hardware issues.",
+                "point2": "Diagnosing and fixing technical problems, including account setup and network configuration.",
+                "point3": "Following up with clients to ensure full functionality of their IT systems after issue resolution."
+            },
             "date": "Jul 2018 - Jul 2019"
         }
     },
@@ -64,40 +85,35 @@
         "header2": "Certifications",
         "certification1": 
         {
-            "title": "SEO 2021: Complete SEO Training + SEO for WordPress Websites",
-            "company": "Udemy",
-            "date": "Mar 2021"
-        },
-        "certification2": 
-        {
-            "title": "Team Leadership & Team Management Skills",
-            "company": "Udemy",
-            "date": "Dec 2021"
-        },
-        "certification3": 
-        {
             "title": "Meta Front-End Developer Professional Certificate",
             "company": "Coursera",
             "date": "Aug 2023"
         },
-        "certification4": 
+        "certification2": 
         {
             "title": "Meta React Native Specialization",
             "company": "Coursera",
             "date": "Feb 2024"
         },
-        "certification5": 
+        "certification3": 
         {
             "title": "Agile with Atlassian Jira",
             "company": "Coursera",
             "date": "Feb 2024"
+        },
+        "certification4": 
+        {
+            "title": "IBM Full Stack Software Developer Professional Certificate",
+            "company": "Coursera",
+            "date": "Sep 2024"
         }
     },
-    "work": 
+    "works": 
     {
         "header1": "MY WORK",
         "header2": "Pet-Projects",
         "description": "Following projects showcases my skills. Each project is briefly described with links to code repositories and live demos in it. It reflects my ability to solve complex problems, work with different technologies, and manage projects effectively.",
+        "loadMore": "More",
         "work1": 
         {
             "title": "Diagram",
@@ -105,20 +121,50 @@
         },
         "work2": 
         {
-            "title": "Aora",
-            "description": "Social Media App that enable users to create and share content and participate in social networking."
-        },
-        "work3": 
-        {
             "title": "E-Shop",
             "description": "Online shop, browse product catalogs, create wish lists, add items to a cart, and complete purchases. It also provides payment processing, shipping, and order management capabilities."
         },
+        "work3": 
+        {
+            "title": "Weather",
+            "description": "Stay informed and prepared with Weather App, your ultimate companion for real-time weather updates and forecasts! Designed with a user-friendly interface."
+        },
         "work4": 
+        {
+            "title": "Apple iPhone15",
+            "description": "This project focuses on rebuilding the Apple iPhone 15 Pro website by integrating GSAP animations and 3D effects using Three.js. It provides a comprehensive tutorial on creating everything from unique animations to interactive 3D models."
+        },
+        "work5": 
+        {
+            "title": "Trendy",
+            "description": "Trendy Dashboard for Ecommerce Shop."
+        },
+        "work6": 
+        {
+            "title": "Xora",
+            "description": "XORA AI Video Editor - SaaS Landing Page."
+        },
+        "work7": 
+        {
+            "title": "Tracker",
+            "description": "Track your progress, motivate your efforts, and celebrate your successes - SaaS Landing Page."
+        },
+        "work8": 
+        {
+            "title": "Mohanad's Portfolio",
+            "description": "A 3D Marketing Portfolio describes Mohanad's expertise as a Marketer."
+        },
+        "work9": 
+        {
+            "title": "Aora",
+            "description": "Social Media App that enable users to create and share content and participate in social networking."
+        },
+        "work10": 
         {
             "title": "Fitness",
             "description": "Fitness app designed to help with exercise, other types of physical training, nutrition and diet, and other ways to get fit."
         },
-        "work5": 
+        "work11": 
         {
             "title": "LeadHunters",
             "description": "Corporate website designed for presenting a LeadHunters company."
@@ -141,5 +187,11 @@
             "success": "Thank you. I will get back to you as soon as possible.",
             "error": "Ahh, something went wrong. Please try again."
         }
+    },
+    "footer":
+    {
+        "box1": "Terms & Conditions",
+        "box2": "Privacy Policy",
+        "box3": "© 2024 Ayman Abusura. All rights reserved."
     }
 }

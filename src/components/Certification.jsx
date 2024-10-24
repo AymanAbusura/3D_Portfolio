@@ -10,7 +10,8 @@ import {
   import "react-vertical-timeline-component/style.min.css";
   
   import { styles } from "../styles";
-  import { certifications } from "../constants";
+  // import { certifications } from "../constants";
+  import { getCertifications } from "../constants/index-translated";
   import { SectionWrapper } from "../hoc";
   import { textVariant } from "../utils/motion";
   
@@ -50,6 +51,7 @@ import { useTranslation } from 'react-i18next';
   const Certification = () => {
     // for translation new
     const {t} = useTranslation();
+    const translatedProjects = getCertifications(t);
 
     return (
       <>
@@ -60,7 +62,7 @@ import { useTranslation } from 'react-i18next';
   
         <div className='mt-20 flex flex-col'>
           <VerticalTimeline>
-            {certifications.map((certification, index) => (
+            {translatedProjects.map((certification, index) => (
               <CertificationCard
                 key={`certification-${index}`}
                 certification={certification}

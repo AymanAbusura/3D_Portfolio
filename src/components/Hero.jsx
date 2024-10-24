@@ -36,7 +36,7 @@ const Hero = () => {
           </p>
 
           <button className='bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary hover:bg-blue-500'>
-            <a href={resumeLink} download={resumeFileName}>Resume</a>
+            <a href={resumeLink} download={resumeFileName}>{t("hero.resume")}</a>
           </button>
 
         </div>
