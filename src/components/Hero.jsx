@@ -1,12 +1,13 @@
 // import { motion } from "framer-motion";
-
+// import { Suspense, lazy } from "react";
 import { styles } from "../styles";
 import resumeEnglish from '../assets/resume/ResumeEN.pdf';
 import resumeRussian from '../assets/resume/ResumeRU.pdf';
-// import { ComputersCanvas } from "./canvas";
 
 //addnew
 import { useTranslation } from 'react-i18next';
+
+// import RobotCanvas from "./canvas/Robot";
 
 const Hero = () => {
   // for translation new
@@ -42,7 +43,7 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* <ComputersCanvas /> */}
+      {/* <RobotCanvas /> */}
 
       {/* <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
         <a href='#about'>
