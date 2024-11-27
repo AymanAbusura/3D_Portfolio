@@ -168,6 +168,11 @@
         {
             "title": "LeadHunters",
             "description": "Corporate website designed for presenting a LeadHunters company."
+        },
+        "work12": 
+        {
+            "title": "StoreIt",
+            "description": "A Google Drive clone application, StoreIt, designed to provide users with a platform for storing, managing, and sharing files. This project demonstrates core functionalities of a cloud storage system with a user-friendly interface and robust backend."
         }
     },
     "contact": 

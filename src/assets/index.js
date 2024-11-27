@@ -49,6 +49,7 @@ import moportfolio from "./projects/moportfolio.webp";
 import trendy from "./projects/trendy.webp";
 import weather from "./projects/weather.webp";
 import apple from "./projects/apple.webp";
+import storeit from "./projects/storeit.webp";
 
 export {
   logo,
@@ -93,6 +94,7 @@ export {
   trendy,
   weather,
   apple,
+  storeit,
   translate,
   linkedin,
   hh,
