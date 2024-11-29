@@ -10,7 +10,7 @@ This is my 3D portfolio built using React and Vite, showcasing various interacti
 * Vite
 * Tailwind CSS
 * i18next
-* particles.js
+* Particles.js
 
 ## Features
 * Interactive 3D animations and models.
