@@ -1,5 +1,4 @@
 import logo from "./others/logo.svg";
-import logo2 from "./others/logo2.png";
 import photo from "./others/photo.png";
 import backend from "./others/backend.png";
 import creator from "./others/creator.png";
@@ -53,7 +52,6 @@ import storeit from "./projects/storeit.webp";
 
 export {
   logo,
-  logo2,
   photo,
   backend,
   creator,

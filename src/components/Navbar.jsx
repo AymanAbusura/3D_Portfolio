@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 import { styles } from '../styles'
-import { logo2, menu, close } from '../assets'
+import { photo, menu, close } from '../assets'
 
 import LanguageSelector from './LanguageSelector';
 import { useTranslation } from 'react-i18next';
@@ -25,7 +25,7 @@ const Navbar = () => {
             window.scrollTo(0,0);
           }}
         >
-          <img src={logo2} alt="logo" className="w-9 h-9 object-contain" style={{ borderRadius: '1rem' }} />
+          <img src={photo} alt="logo" className="w-9 h-9 object-contain" style={{ borderRadius: '1rem' }} />
           <p className="text-white text-[18px] md:text-[15px] font-bold cursor-pointer flex">{t("navbar.box1")} &nbsp; <span className="sm:block hidden">| {t("navbar.position")}</span></p>
         </Link>
 
