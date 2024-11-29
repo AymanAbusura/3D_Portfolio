@@ -16,9 +16,9 @@ function LanguageSelector() {
       <button className="flex items-center" onClick={() => setIsOpen(!isOpen)}>
         <img src={translate} className="w-7 h-7" alt="Translate Icon" />
           {!isOpen ? (
-            <AiOutlineCaretDown className="h-8" />
+            <AiOutlineCaretDown className="h-8 lg:w-4 md:w-5 sm:w-5" />
           ) : (
-            <AiOutlineCaretUp className="h-8" />
+            <AiOutlineCaretUp className="h-8 lg:w-4 md:w-5 sm:w-5" />
           )}
       </button>
 

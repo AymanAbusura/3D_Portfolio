@@ -1,6 +1,5 @@
-import { EarthCanvas, BallCanvas
-  // , RobotCanvas
-  , StarsCanvas } from './canvas';
+import { EarthCanvas, BallCanvas, StarsCanvas } from './canvas';
+import ParticlesBackground from './ParticlesBackground';
 import Hero from './Hero';
 import Navbar from './Navbar';
 import About from './About';
@@ -14,6 +13,7 @@ import LanguageSelector from './LanguageSelector';
 import Top from './Top';
 
 export {
+  ParticlesBackground,
   Hero,
   Navbar,
   About,
@@ -23,8 +23,7 @@ export {
   Certification,
   Contact,
   EarthCanvas, 
-  BallCanvas, 
-  // RobotCanvas, 
+  BallCanvas,
   StarsCanvas,
   Footer,
   Top,

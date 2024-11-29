@@ -1,13 +1,9 @@
-// import { motion } from "framer-motion";
-// import { Suspense, lazy } from "react";
 import { styles } from "../styles";
 import resumeEnglish from '../assets/resume/ResumeEN.pdf';
 import resumeRussian from '../assets/resume/ResumeRU.pdf';
 
 //addnew
 import { useTranslation } from 'react-i18next';
-
-// import RobotCanvas from "./canvas/Robot";
 
 const Hero = () => {
   // for translation new
@@ -29,21 +25,20 @@ const Hero = () => {
 
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>
-          {t("hero.greeting")} <span className='text-[#915EFF]'>{t("hero.name")}</span>
+            {t("hero.greeting")} <span className='text-[#915EFF]'>{t("hero.name")}</span>
           </h1>
 
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-          {t("hero.description")}
+            {t("hero.description")}
           </p>
 
-          <button className='bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary hover:bg-blue-500'>
-            <a href={resumeLink} download={resumeFileName}>{t("hero.resume")}</a>
-          </button>
-
+          <div className="mt-5">
+            <button className='relative bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary hover:bg-blue-500 z-30'>
+              <a href={resumeLink} download={resumeFileName}>{t("hero.resume")}</a>
+            </button>
+          </div>
         </div>
       </div>
-
-      {/* <RobotCanvas /> */}
 
       {/* <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
         <a href='#about'>
