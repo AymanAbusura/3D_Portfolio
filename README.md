@@ -20,4 +20,4 @@ This is my 3D portfolio built using React and Vite, showcasing various interacti
 
 ## Screenshots
 <img width="1666" alt="1" src="https://github.com/user-attachments/assets/20b100da-0310-47d3-ae4e-8f2ede6b082a">
-<img width="1678" alt="2" src="https://github.com/user-attachments/assets/129e6f0d-5776-4965-b1ac-7e9929b3e587">
+<img width="1676" alt="2" src="https://github.com/user-attachments/assets/0cb301b8-e9d5-4ba5-bce7-682184be9141">
