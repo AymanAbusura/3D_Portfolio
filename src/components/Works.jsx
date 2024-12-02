@@ -153,6 +153,7 @@ import { projects } from "../constants";
 import { getProjects } from "../constants/index-translated";
 import { fadeIn, textVariant } from "../utils/motion";
 import { useTranslation } from 'react-i18next';
+import { AnimatePresence } from "framer-motion";
 
 const ProjectCard = ({
   index,
@@ -165,9 +166,10 @@ const ProjectCard = ({
 }) => {
   return (
     <motion.div 
-      variants={fadeIn("up", "spring", index * 0.5, 0.75)} 
+      variants={fadeIn("up", "spring", index * 0.2, 0.75)}
       initial="hidden" 
       animate="show"
+      exit={{ opacity: 0, y: 20 }}
     >
       <Tilt
         options={{
@@ -230,10 +232,10 @@ const ProjectCard = ({
 
 const Works = () => {
   const { t } = useTranslation();
-  const [visibleProjects, setVisibleProjects] = useState(3);
+  const [visibleCount, setVisibleCount] = useState(3);
 
   const loadMoreProjects = () => {
-    setVisibleProjects((prevCount) => Math.min(prevCount + 3, projects.length));
+    setVisibleCount((prevCount) => Math.min(prevCount + 3, projects.length));
   };
 
   // Translate project descriptions on render
@@ -256,12 +258,14 @@ const Works = () => {
       </div>
 
       <div className="mt-20 flex flex-wrap gap-7">
-        {translatedProjects.slice(0, visibleProjects).map((project, index) => (
-          <ProjectCard key={`project-${index}`} index={index} {...project} />
-        ))}
+        <AnimatePresence>
+          {translatedProjects.slice(0, visibleCount).map((project, index) => (
+            <ProjectCard key={`project-${index}`} index={index} {...project} />
+          ))}
+        </AnimatePresence>
       </div>
 
-      {visibleProjects < projects.length && (
+      {visibleCount < projects.length && (
         <div className="mt-10 flex justify-center">
           <button
             onClick={loadMoreProjects}
