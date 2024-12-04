@@ -13,6 +13,11 @@ const Navbar = () => {
 
   // for translation
   const { t } = useTranslation();
+  const sectionMap = {
+    box2: "about",
+    box3: "work",
+    box4: "contact",
+  };
 
   return (
     <nav className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-primary`}>
@@ -33,10 +38,18 @@ const Navbar = () => {
           {['box2', 'box3', 'box4'].map((key, idx) => (
             <li
               key={idx}
-              className={`${active === `${t(`navbar.${key}`)}` ? "text-white" : "text-secondary"} font-poppins font-medium cursor-pointer text-[16px] lg:text-[18px]`}
-              onClick={() => setActive(`${t(`navbar.${key}`)}`)}
+              // className={`${active === `${t(`navbar.${key}`)}` ? "text-white" : "text-secondary"} font-poppins font-medium cursor-pointer text-[16px] lg:text-[18px]`}
+              className={`${active === key ? "text-white" : "text-secondary"} font-poppins font-medium cursor-pointer text-[16px] lg:text-[18px]`}
+              // onClick={() => setActive(`${t(`navbar.${key}`)}`)}
+              onClick={() => {
+                setActive(key);
+                const sectionId = sectionMap[key];
+                document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' });
+              }}
+
             >
-              <a href={`#${key}`}>{t(`navbar.${key}`)}</a>
+              <a href={`#${sectionMap[key]}`}>{t(`navbar.${key}`)}</a>
+              {/* <a href={`#${key}`}>{t(`navbar.${key}`)}</a> */}
             </li>
           ))}
           <li>
@@ -58,13 +71,21 @@ const Navbar = () => {
               {['box2', 'box3', 'box4'].map((key, idx) => (
                 <li
                   key={idx}
-                  className={`${active === `${t(`navbar.${key}`)}` ? "text-white" : "text-secondary"} font-poppins font-medium cursor-pointer text-[16px]`}
+                  // className={`${active === `${t(`navbar.${key}`)}` ? "text-white" : "text-secondary"} font-poppins font-medium cursor-pointer text-[16px]`}
+                  className={`${active === key ? "text-white" : "text-secondary"} font-poppins font-medium cursor-pointer text-[16px]`}
+                  // onClick={() => {
+                  //   setToggle(!toggle);
+                  //   setActive(`${t(`navbar.${key}`)}`);
+                  // }}
                   onClick={() => {
                     setToggle(!toggle);
-                    setActive(`${t(`navbar.${key}`)}`);
+                    setActive(key);
+                    const sectionId = sectionMap[key];
+                    document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' });
                   }}
                 >
-                  <a href={`#${key}`}>{t(`navbar.${key}`)}</a>
+                  <a href={`#${sectionMap[key]}`}>{t(`navbar.${key}`)}</a>
+                  {/* <a href={`#${key}`}>{t(`navbar.${key}`)}</a> */}
                 </li>
               ))}
               <li>
