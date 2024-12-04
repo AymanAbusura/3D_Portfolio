@@ -1,19 +1,16 @@
 /* eslint-disable react-refresh/only-export-components */
 /* eslint-disable react/prop-types */
 
-import {
-    VerticalTimeline,
-    VerticalTimelineElement,
-  } from "react-vertical-timeline-component";
-  import { motion } from "framer-motion";
+import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component";
+import { motion } from "framer-motion";
   
-  import "react-vertical-timeline-component/style.min.css";
+import "react-vertical-timeline-component/style.min.css";
   
-  import { styles } from "../styles";
-  // import { certifications } from "../constants";
-  import { getCertifications } from "../constants/index-translated";
-  import { SectionWrapper } from "../hoc";
-  import { textVariant } from "../utils/motion";
+import { styles } from "../styles";
+// import { certifications } from "../constants";
+import { getCertifications } from "../constants/index-translated";
+import { SectionWrapper } from "../hoc";
+import { textVariant } from "../utils/motion";
   
 //addnew
 import { useTranslation } from 'react-i18next';
@@ -42,7 +39,6 @@ import { useTranslation } from 'react-i18next';
         <div onClick={() => window.open(certification.link, "_blank")}>
           <h3 className='text-white text-[24px] font-bold'>{certification.title}</h3>
           <p className='text-secondary text-[16px] font-semibold' style={{ margin: 0 }}>{certification.company_name}</p>
-          {/* <button className='text-secondary text-[8px] font-semibold' style={{ margin: 0, fontSize: 10 }}><a href={certification.link}>Check certification</a></button> */}
         </div>
       </VerticalTimelineElement>
     );
