@@ -117,7 +117,7 @@ const Works = () => {
         </motion.p>
       </div>
 
-      <div className="mt-20 flex flex-wrap gap-7">
+      <div className="mt-20 flex flex-wrap md:justify-center gap-7">
         <AnimatePresence>
           {translatedProjects.slice(0, visibleCount).map((project, index) => (
             <ProjectCard key={`project-${index}`} index={index} {...project} />
