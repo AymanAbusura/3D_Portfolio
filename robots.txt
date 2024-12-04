@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://ayman-portfolio.onrender.com/sitemap.xml
+Sitemap: https://aymanabusura.vercel.app/sitemap.xml
