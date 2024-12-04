@@ -8,7 +8,6 @@ import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 
-
 //addnew
 import { useTranslation } from 'react-i18next';
 
