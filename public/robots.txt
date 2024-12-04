@@ -1,4 +1,4 @@
 User-agent: *
-Allow: /
+Allow: /public
 
 Sitemap: https://aymanabusura.vercel.app/sitemap.xml
