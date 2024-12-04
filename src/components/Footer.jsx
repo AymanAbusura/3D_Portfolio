@@ -15,19 +15,19 @@ const Footer = () => {
   
         <div className="flex gap-3">
           <div className="social-icon cursor-pointer" onClick={() => window.open(import.meta.env.VITE_APP_GITHUB, "_blank")}>
-            <img src={github} alt="github" className="w-1/2 h-1/2 object-contain cursor-pointer" />
+            <img src={github} alt="github" className="w-1/2 h-1/2 object-contain cursor-pointer" loading="lazy" />
           </div>
           <div className="social-icon cursor-pointer" onClick={() => window.open(import.meta.env.VITE_APP_LINKEDIN, "_blank")}>
-            <img src={linkedin} alt="linkedin" className="w-1/2 h-1/2 object-contain cursor-pointer" />
+            <img src={linkedin} alt="linkedin" className="w-1/2 h-1/2 object-contain cursor-pointer" loading="lazy" />
           </div>
           <div className="social-icon cursor-pointer" onClick={() => window.open(import.meta.env.VITE_APP_HH, "_blank")}>
-            <img src={hh} alt="hh" className="w-1/2 h-1/2 object-contain cursor-pointer" />
+            <img src={hh} alt="hh" className="w-1/2 h-1/2 object-contain cursor-pointer" loading="lazy" />
           </div>
           <div className="social-icon cursor-pointer" onClick={() => window.open(import.meta.env.VITE_APP_HABR, "_blank")}>
-            <img src={habr} alt="habr" className="w-1/2 h-1/2 object-contain cursor-pointer" />
+            <img src={habr} alt="habr" className="w-1/2 h-1/2 object-contain cursor-pointer" loading="lazy" />
           </div>
           <div className="social-icon cursor-pointer" onClick={() => window.open(import.meta.env.VITE_APP_TELEGRAM, "_blank")}>
-            <img src={telegram} alt="telegram" className="w-1/2 h-1/2 object-contain cursor-pointer" />
+            <img src={telegram} alt="telegram" className="w-1/2 h-1/2 object-contain cursor-pointer" loading="lazy" />
           </div>
         </div>
   
@@ -36,4 +36,4 @@ const Footer = () => {
     );
   };
   
-  export default Footer;
+export default Footer;
