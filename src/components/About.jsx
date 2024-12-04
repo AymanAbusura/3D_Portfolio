@@ -63,7 +63,13 @@ const About = () => {
         </motion.p>
         <Tilt className='xs:w-[250px] w-full'>
           <motion.div variants={fadeIn("right", "spring", 0.5, 0.75)}>
-            <img src={photo} alt="Ayman" className={`${isMobile ? 'hidden' : 'w-[250px] rounded-[20px] min-h-[280px] flex justify-evenly items-center flex-col'}`}/>
+            <img 
+              src={photo} 
+              alt="Ayman" 
+              className={`${isMobile ? 'hidden' : 'w-[250px] rounded-[20px] min-h-[280px] flex justify-evenly items-center flex-col'}`}
+              width="250"
+              height="280"
+            />
           </motion.div>
         </Tilt>
       </div>
