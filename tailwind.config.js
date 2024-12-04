@@ -13,6 +13,9 @@ export const theme = {
       "white-100": "#f3f3f3",
       "white-500": "#62646C",
     },
+    fontFamily: {
+      sans: ["Poppins", "sans-serif"],
+    },
     boxShadow: {
       card: "0px 35px 120px -15px #211e35",
     },
