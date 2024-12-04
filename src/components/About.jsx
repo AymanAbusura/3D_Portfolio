@@ -69,6 +69,7 @@ const About = () => {
               className={`${isMobile ? 'hidden' : 'w-[250px] rounded-[20px] min-h-[280px] flex justify-evenly items-center flex-col'}`}
               width="250"
               height="280"
+              loading="lazy"
             />
           </motion.div>
         </Tilt>

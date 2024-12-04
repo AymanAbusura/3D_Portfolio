@@ -30,7 +30,7 @@ const Navbar = () => {
             window.scrollTo(0,0);
           }}
         >
-          <img src={photo} alt="logo" className="w-9 h-9 object-contain" style={{ borderRadius: '1rem' }} />
+          <img src={photo} alt="logo" className="w-9 h-9 object-contain" style={{ borderRadius: '1rem' }} loading="lazy" />
           <p className="text-white text-[18px] md:text-[15px] font-bold cursor-pointer flex">{t("navbar.box1")} &nbsp; <span className="sm:block hidden">| {t("navbar.position")}</span></p>
         </Link>
 

@@ -32,6 +32,7 @@ import { useTranslation } from 'react-i18next';
               src={certification.icon}
               alt={certification.company_name}
               className='w-[60%] h-[60%] object-contain'
+              loading="lazy"
             />
           </div>
         }
