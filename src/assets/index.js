@@ -36,18 +36,32 @@ import leadhunters from "./company/leadhunters.webp";
 import udemy from "./company/udemy.webp";
 import coursera from "./company/coursera.webp";
 
-import diagram from "./projects/diagram.webp";
-import aora from "./projects/aora.webp"
-import ecommerce from "./projects/ecommerce.webp";
-import fitness from "./projects/fitness.webp";
-import leadhunter from "./projects/leadhunter.webp";
-import xora from "./projects/xora.webp";
-import tracker from "./projects/tracker.webp";
-import moportfolio from "./projects/moportfolio.webp";
-import trendy from "./projects/trendy.webp";
-import weather from "./projects/weather.webp";
-import apple from "./projects/apple.webp";
-import storeit from "./projects/storeit.webp";
+import diagram from "./petprojects/diagram.webp";
+import aora from "./petprojects/aora.webp"
+import ecommerce from "./petprojects/ecommerce.webp";
+import fitness from "./petprojects/fitness.webp";
+import leadhunter from "./petprojects/leadhunter.webp";
+import xora from "./petprojects/xora.webp";
+import tracker from "./petprojects/tracker.webp";
+import moportfolio from "./petprojects/moportfolio.webp";
+import trendy from "./petprojects/trendy.webp";
+import weather from "./petprojects/weather.webp";
+import apple from "./petprojects/apple.webp";
+import storeit from "./petprojects/storeit.webp";
+
+import darkyellowprelandingpage from "./projects/darkyellowprelandingpage.webp";
+import redlandingpage from "./projects/redlandingpage.webp"
+import darkgreenprelandingpage from "./projects/darkgreenprelandingpage.webp";
+import grayprelandingpage from "./projects/grayprelandingpage.webp"
+import greenprelandingpage from "./projects/greenprelandingpage.webp";
+import orangepage from "./projects/orangepage.webp";
+import shinycryptopage from "./projects/shinycryptopage.webp";
+import cryptoplatform from "./projects/cryptoplatform.webp";
+import moderncryptolandingpage from "./projects/moderncryptolandingpage.webp";
+import ironmasterpage from "./projects/ironmasterpage.webp";
+import maincryptolanding from "./projects/maincryptolanding.webp";
+import whitelandingpage from "./projects/whitelandingpage.webp";
+import modrenpinkpurplecryptolandingpage from "./projects/modrenpinkpurplecryptolandingpage.webp";
 
 export {
   logo,
@@ -80,6 +94,19 @@ export {
   leadhunters,
   coursera,
   udemy,
+  darkyellowprelandingpage,
+  redlandingpage,
+  darkgreenprelandingpage,
+  grayprelandingpage,
+  greenprelandingpage,
+  orangepage,
+  shinycryptopage,
+  cryptoplatform,
+  moderncryptolandingpage,
+  maincryptolanding,
+  whitelandingpage,
+  modrenpinkpurplecryptolandingpage,
+  ironmasterpage,
   diagram,
   ecommerce,
   fitness,

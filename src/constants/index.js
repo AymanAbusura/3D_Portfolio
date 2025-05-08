@@ -21,6 +21,19 @@ import {
   leadhunters,
   coursera,
   // udemy,
+  darkyellowprelandingpage,
+  redlandingpage,
+  darkgreenprelandingpage,
+  grayprelandingpage,
+  greenprelandingpage,
+  orangepage,
+  shinycryptopage,
+  cryptoplatform,
+  moderncryptolandingpage,
+  maincryptolanding,
+  whitelandingpage,
+  modrenpinkpurplecryptolandingpage,
+  ironmasterpage,
   diagram,
   ecommerce,
   fitness,
@@ -223,6 +236,282 @@ const certifications = [
 
 const projects = [
   {
+    name: "Dark Yellow Prelanding Page",
+    description: "A modern pre-landing page for an investment platform offering zero fees, expert support, and a trading simulator—designed to help users grow and protect their savings with ease.",
+    tags: [
+      {
+        name: "HTML",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "CSS",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "JS",
+        color: "green-text-gradient",
+      },
+    ],
+    image: darkyellowprelandingpage,
+    preview: import.meta.env.VITE_APP_PROJECT_PREVIEW1,
+    source_code_link: import.meta.env.VITE_APP_PROJECT_LINK1,
+  },
+  {
+    name: "Red Prelanding Page",
+    description: "A modern pre-landing page for an investment platform offering zero fees, expert support, and a trading simulator—designed to help users grow and protect their savings with ease.",
+    tags: [
+      {
+        name: "HTML",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "CSS",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "JS",
+        color: "green-text-gradient",
+      },
+    ],
+    image: redlandingpage,
+    preview: import.meta.env.VITE_APP_PROJECT_PREVIEW2,
+    source_code_link: import.meta.env.VITE_APP_PROJECT_LINK2,
+  },
+  {
+    name: "Dark Green PreLanding Page",
+    description: "A modern pre-landing page for an investment platform offering zero fees, expert support, and a trading simulator—designed to help users grow and protect their savings with ease.",
+    tags: [
+      {
+        name: "HTML",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "CSS",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "JS",
+        color: "green-text-gradient",
+      },
+    ],
+    image: darkgreenprelandingpage,
+    preview: import.meta.env.VITE_APP_PROJECT_PREVIEW3,
+    source_code_link: import.meta.env.VITE_APP_PROJECT_LINK3,
+  },
+  {
+    name: "Gray Prelanding Page",
+    description: "A modern pre-landing page for an investment platform offering zero fees, expert support, and a trading simulator—designed to help users grow and protect their savings with ease.",
+    tags: [
+      {
+        name: "HTML",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "CSS",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "JS",
+        color: "green-text-gradient",
+      },
+    ],
+    image: grayprelandingpage,
+    preview: import.meta.env.VITE_APP_PROJECT_PREVIEW4,
+    source_code_link: import.meta.env.VITE_APP_PROJECT_LINK4,
+  },
+  {
+    name: "Green Prelanding Page",
+    description: "A modern pre-landing page for an investment platform offering zero fees, expert support, and a trading simulator—designed to help users grow and protect their savings with ease.",
+    tags: [
+      {
+        name: "HTML",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "CSS",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "JS",
+        color: "green-text-gradient",
+      },
+    ],
+    image: greenprelandingpage,
+    preview: import.meta.env.VITE_APP_PROJECT_PREVIEW5,
+    source_code_link: import.meta.env.VITE_APP_PROJECT_LINK5,
+  },
+  {
+    name: "Orange Colored Page",
+    description: "A modern pre-landing page for an investment platform offering zero fees, expert support, and a trading simulator—designed to help users grow and protect their savings with ease.",
+    tags: [
+      {
+        name: "HTML",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "CSS",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "JS",
+        color: "green-text-gradient",
+      },
+    ],
+    image: orangepage,
+    preview: import.meta.env.VITE_APP_PROJECT_PREVIEW6,
+    source_code_link: import.meta.env.VITE_APP_PROJECT_LINK6,
+  },
+  {
+    name: "White Landing Page",
+    description: "A modern landing page for an investment platform offering zero fees, expert support, and a trading simulator—designed to help users grow and protect their savings with ease.",
+    tags: [
+      {
+        name: "HTML",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "CSS",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "JS",
+        color: "green-text-gradient",
+      },
+    ],
+    image: whitelandingpage,
+    preview: import.meta.env.VITE_APP_PROJECT_PREVIEW7,
+    source_code_link: import.meta.env.VITE_APP_PROJECT_LINK7,
+  },
+  {
+    name: "Shiny Crypto Page",
+    description: "A modern pre-landing page for an investment platform offering zero fees, expert support, and a trading simulator—designed to help users grow and protect their savings with ease.",
+    tags: [
+      {
+        name: "HTML",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "CSS",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "JS",
+        color: "green-text-gradient",
+      },
+    ],
+    image: shinycryptopage,
+    preview: import.meta.env.VITE_APP_PROJECT_PREVIEW8,
+    source_code_link: import.meta.env.VITE_APP_PROJECT_LINK8,
+  },
+  {
+    name: "Main Crypto Landing Page",
+    description: "A modern landing page for an investment platform offering zero fees, expert support, and a trading simulator—designed to help users grow and protect their savings with ease.",
+    tags: [
+      {
+        name: "HTML",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "CSS",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "JS",
+        color: "green-text-gradient",
+      },
+    ],
+    image: maincryptolanding,
+    preview: import.meta.env.VITE_APP_PROJECT_PREVIEW9,
+    source_code_link: import.meta.env.VITE_APP_PROJECT_LINK9,
+  },
+  {
+    name: "Modren Pink Purple Crypto Landing Page",
+    description: "A modern landing page for an investment platform offering zero fees, expert support, and a trading simulator—designed to help users grow and protect their savings with ease.",
+    tags: [
+      {
+        name: "HTML",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "CSS",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "JS",
+        color: "green-text-gradient",
+      },
+    ],
+    image: modrenpinkpurplecryptolandingpage,
+    preview: import.meta.env.VITE_APP_PROJECT_PREVIEW10,
+    source_code_link: import.meta.env.VITE_APP_PROJECT_LINK10,
+  },
+  {
+    name: "Modern Crypto Landing Page",
+    description: "A modern landing page for an investment platform offering zero fees, expert support, and a trading simulator—designed to help users grow and protect their savings with ease.",
+    tags: [
+      {
+        name: "HTML",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "CSS",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "JS",
+        color: "green-text-gradient",
+      },
+    ],
+    image: moderncryptolandingpage,
+    preview: import.meta.env.VITE_APP_PROJECT_PREVIEW11,
+    source_code_link: import.meta.env.VITE_APP_PROJECT_LINK11,
+  },
+  {
+    name: "Crypto Platform",
+    description: "Our Crypto Platform Project is built to offer users a seamless and efficient experience when exploring cryptocurrencies. Whether you're an experienced trader or just starting out, our platform features a user-friendly interface and a variety of tools to suit your needs.",
+    tags: [
+      {
+        name: "HTML",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "CSS",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "JS",
+        color: "green-text-gradient",
+      },
+    ],
+    image: cryptoplatform,
+    preview: import.meta.env.VITE_APP_PROJECT_PREVIEW12,
+    source_code_link: import.meta.env.VITE_APP_PROJECT_LINK12,
+  },
+  {
+    name: "IronMaster Page",
+    description: "A construction company specializing in custom metal frame structures, fences, gates, and canopies—Iron Master delivers durable, functional designs with over 25 years of experience.",
+    tags: [
+      {
+        name: "HTML",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "CSS",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "JS",
+        color: "green-text-gradient",
+      },
+    ],
+    image: ironmasterpage,
+    preview: import.meta.env.VITE_APP_PROJECT_PREVIEW13,
+    source_code_link: import.meta.env.VITE_APP_PROJECT_LINK13,
+  },
+];
+
+const petProjects = [
+  {
     name: "Diagram",
     description: "Social Media App that enable users to create and share content and participate in social networking.",
     tags: [
@@ -252,8 +541,8 @@ const projects = [
       },
     ],
     image: diagram,
-    preview: import.meta.env.VITE_APP_PROJECT_PREVIEW1,
-    source_code_link: import.meta.env.VITE_APP_PROJECT_LINK1,
+    preview: import.meta.env.VITE_APP_PET_PROJECT_PREVIEW1,
+    source_code_link: import.meta.env.VITE_APP_PET_PROJECT_LINK1,
   },
   {
     name: "E-Shop",
@@ -277,8 +566,8 @@ const projects = [
       },
     ],
     image: ecommerce,
-    preview: import.meta.env.VITE_APP_PROJECT_PREVIEW2,
-    source_code_link: import.meta.env.VITE_APP_PROJECT_LINK3,
+    preview: import.meta.env.VITE_APP_PET_PROJECT_PREVIEW2,
+    source_code_link: import.meta.env.VITE_APP_PET_PROJECT_LINK3,
   },
   {
     name: "Weather",
@@ -298,8 +587,8 @@ const projects = [
       },
     ],
     image: weather,
-    preview: import.meta.env.VITE_APP_PROJECT_PREVIEW7,
-    source_code_link: import.meta.env.VITE_APP_PROJECT_LINK10,
+    preview: import.meta.env.VITE_APP_PET_PROJECT_PREVIEW7,
+    source_code_link: import.meta.env.VITE_APP_PET_PROJECT_LINK10,
   },
   {
     name: "Apple iPhone15",
@@ -327,8 +616,8 @@ const projects = [
       },
     ],
     image: apple,
-    preview: import.meta.env.VITE_APP_PROJECT_PREVIEW8,
-    source_code_link: import.meta.env.VITE_APP_PROJECT_LINK11,
+    preview: import.meta.env.VITE_APP_PET_PROJECT_PREVIEW8,
+    source_code_link: import.meta.env.VITE_APP_PET_PROJECT_LINK11,
   },
   {
     name: "Trendy",
@@ -348,8 +637,8 @@ const projects = [
       },
     ],
     image: trendy,
-    preview: import.meta.env.VITE_APP_PROJECT_PREVIEW6,
-    source_code_link: import.meta.env.VITE_APP_PROJECT_LINK9,
+    preview: import.meta.env.VITE_APP_PET_PROJECT_PREVIEW6,
+    source_code_link: import.meta.env.VITE_APP_PET_PROJECT_LINK9,
   },
   {
     name: "Xora",
@@ -369,8 +658,8 @@ const projects = [
       },
     ],
     image: xora,
-    preview: import.meta.env.VITE_APP_PROJECT_PREVIEW3,
-    source_code_link: import.meta.env.VITE_APP_PROJECT_LINK6,
+    preview: import.meta.env.VITE_APP_PET_PROJECT_PREVIEW3,
+    source_code_link: import.meta.env.VITE_APP_PET_PROJECT_LINK6,
   },
   {
     name: "Tracker",
@@ -394,8 +683,8 @@ const projects = [
       },
     ],
     image: tracker,
-    preview: import.meta.env.VITE_APP_PROJECT_PREVIEW4,
-    source_code_link: import.meta.env.VITE_APP_PROJECT_LINK7,
+    preview: import.meta.env.VITE_APP_PET_PROJECT_PREVIEW4,
+    source_code_link: import.meta.env.VITE_APP_PET_PROJECT_LINK7,
   },
   {
     name: "Mohanad's Portfolio",
@@ -423,8 +712,8 @@ const projects = [
       },
     ],
     image: moportfolio,
-    preview: import.meta.env.VITE_APP_PROJECT_PREVIEW5,
-    source_code_link: import.meta.env.VITE_APP_PROJECT_LINK8,
+    preview: import.meta.env.VITE_APP_PET_PROJECT_PREVIEW5,
+    source_code_link: import.meta.env.VITE_APP_PET_PROJECT_LINK8,
   },
   {
     name: "Aora",
@@ -453,7 +742,7 @@ const projects = [
     ],
     image: aora,
     preview: '',
-    source_code_link: import.meta.env.VITE_APP_PROJECT_LINK2,
+    source_code_link: import.meta.env.VITE_APP_PET_PROJECT_LINK2,
   },
   {
     name: "Fitness",
@@ -474,7 +763,7 @@ const projects = [
     ],
     image: fitness,
     preview: '',
-    source_code_link: import.meta.env.VITE_APP_PROJECT_LINK4,
+    source_code_link: import.meta.env.VITE_APP_PET_PROJECT_LINK4,
   },
   {
     name: "LeadHunters",
@@ -491,8 +780,8 @@ const projects = [
     ],
     image: leadhunter,
     preview: '',
-    source_code_link: import.meta.env.VITE_APP_PROJECT_LINK5,
+    source_code_link: import.meta.env.VITE_APP_PET_PROJECT_LINK5,
   },
 ];
 
-export { services, technologies, experiences, certifications, projects };
+export { services, technologies, experiences, certifications, projects, petProjects };

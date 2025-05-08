@@ -5,7 +5,8 @@
         "position": "Frontend Developer",
         "box2": "About",
         "box3": "Work",
-        "box4": "Contact"
+        "box4": "Projects",
+        "box5": "Contact"
     },
     "hero": 
     {
@@ -18,7 +19,7 @@
     {
         "header1": "INTRODUCTION",
         "header2": "Overview",
-        "description": "I am a Frontend Developer with 2+ years of experience, including both commercial development and academic projects. During this time, I have mastered and successfully applied technologies such as React, TypeScript, HTML5, CSS3, JavaScript, as well as libraries and frameworks like Vite, Next.js, and Tailwind CSS. I have worked on projects ranging from creating complex landing pages and e-commerce platforms to social applications, which has significantly strengthened my skills in UI/UX and API integration. Moving forward, I plan to deepen my expertise in building complex interfaces using modern approaches such as Server-side Rendering (SSR), while also progressing towards FullStack development with a focus on integrating React with microservices. I am open to Frontend Developer positions, primarily working with React, TypeScript, Redux, NextJS, and Vite.",
+        "description": "I am a Web developer with over 3 years of commercial experience. My core stack includes HTML5, CSS3, JavaScript, React, Vite, and Node.js. During this time, I have developed dozens of landing pages, e-commerce websites, and social application interfaces. I am proficient in responsive, cross-browser, and semantic layout using Flexbox, CSS Grid, and BEM methodology. I have experience integrating with APIs and implementing UI/UX designs from tools like Figma and PNG assets. I am currently seeking a Frontend Developer (React) position where I can apply my experience in building modern user interfaces and grow in areas such as application architecture, performance optimization, and engineering best practices.",
         "services": {
             "service1": "Web Developer",
             "service2": "React Developer",
@@ -111,68 +112,139 @@
     "works": 
     {
         "header1": "MY WORK",
-        "header2": "Pet-Projects",
+        "header2": "Projects",
         "description": "Following projects showcases my skills. Each project is briefly described with links to code repositories and live demos in it. It reflects my ability to solve complex problems, work with different technologies, and manage projects effectively.",
         "loadMore": "More",
-        "work1": 
-        {
-            "title": "Diagram",
-            "description": "Social Media App that enable users to create and share content and participate in social networking."
+        "toggle_title": "projects",
+        "toggle_title2": "pet-projects",
+        "projects": {
+            "work1": 
+            {
+                "title": "Dark Yellow Prelanding Page",
+                "description": "A modern pre-landing page for an investment platform offering zero fees, expert support, and a trading simulator—designed to help users grow and protect their savings with ease."
+            },
+            "work2": 
+            {
+                "title": "Red PreLanding Page",
+                "description": "A modern pre-landing page for an investment platform offering zero fees, expert support, and a trading simulator—designed to help users grow and protect their savings with ease."
+            },
+            "work3": 
+            {
+                "title": "Dark Green PreLanding Page",
+                "description": "A modern pre-landing page for an investment platform offering zero fees, expert support, and a trading simulator—designed to help users grow and protect their savings with ease."
+            },
+            "work4": 
+            {
+                "title": "Gray Prelanding Page",
+                "description": "A modern pre-landing page for an investment platform offering zero fees, expert support, and a trading simulator—designed to help users grow and protect their savings with ease."
+            },
+            "work5": 
+            {
+                "title": "Green Prelanding Page",
+                "description": "A modern pre-landing page for an investment platform offering zero fees, expert support, and a trading simulator—designed to help users grow and protect their savings with ease."
+            },
+            "work6": 
+            {
+                "title": "Orange Colored Page",
+                "description": "A modern pre-landing page for an investment platform offering zero fees, expert support, and a trading simulator—designed to help users grow and protect their savings with ease."
+            },
+            "work7": 
+            {
+                "title": "White Landing Page",
+                "description": "A modern landing page for an investment platform offering zero fees, expert support, and a trading simulator—designed to help users grow and protect their savings with ease."
+            },
+            "work8": 
+            {
+                "title": "Shiny Crypto Page",
+                "description": "A modern landing page for an investment platform offering zero fees, expert support, and a trading simulator—designed to help users grow and protect their savings with ease."
+            },
+            "work9": 
+            {
+                "title": "Main Crypto Landing Page",
+                "description": "A modern landing page for an investment platform offering zero fees, expert support, and a trading simulator—designed to help users grow and protect their savings with ease."
+            },
+            "work10": 
+            {
+                "title": "Modren Pink Purple Crypto Landing Page",
+                "description": "A modern landing page for an investment platform offering zero fees, expert support, and a trading simulator—designed to help users grow and protect their savings with ease."
+            },
+            "work11": 
+            {
+                "title": "Modern Crypto Landing Page",
+                "description": "A modern landing page for an investment platform offering zero fees, expert support, and a trading simulator—designed to help users grow and protect their savings with ease."
+            },
+            "work12": 
+            {
+                "title": "Crypto Platform",
+                "description": "Our Crypto Platform Project is built to offer users a seamless and efficient experience when exploring cryptocurrencies. Whether you're an experienced trader or just starting out, our platform features a user-friendly interface and a variety of tools to suit your needs."
+            },
+            "work13": 
+            {
+                "title": "IronMaster Page",
+                "description": "A construction company specializing in custom metal frame structures, fences, gates, and canopies—Iron Master delivers durable, functional designs with over 25 years of experience."
+            }
         },
-        "work2": 
-        {
-            "title": "E-Shop",
-            "description": "Online shop, browse product catalogs, create wish lists, add items to a cart, and complete purchases. It also provides payment processing, shipping, and order management capabilities."
-        },
-        "work3": 
-        {
-            "title": "Weather",
-            "description": "Stay informed and prepared with Weather App, your ultimate companion for real-time weather updates and forecasts! Designed with a user-friendly interface."
-        },
-        "work4": 
-        {
-            "title": "Apple iPhone15",
-            "description": "This project focuses on rebuilding the Apple iPhone 15 Pro website by integrating GSAP animations and 3D effects using Three.js. It provides a comprehensive tutorial on creating everything from unique animations to interactive 3D models."
-        },
-        "work5": 
-        {
-            "title": "Trendy",
-            "description": "Trendy Dashboard for Ecommerce Shop."
-        },
-        "work6": 
-        {
-            "title": "Xora",
-            "description": "XORA AI Video Editor - SaaS Landing Page."
-        },
-        "work7": 
-        {
-            "title": "Tracker",
-            "description": "Track your progress, motivate your efforts, and celebrate your successes - SaaS Landing Page."
-        },
-        "work8": 
-        {
-            "title": "Mohanad's Portfolio",
-            "description": "A 3D Marketing Portfolio describes Mohanad's expertise as a Marketer."
-        },
-        "work9": 
-        {
-            "title": "Aora",
-            "description": "Social Media App that enable users to create and share content and participate in social networking."
-        },
-        "work10": 
-        {
-            "title": "Fitness",
-            "description": "Fitness app designed to help with exercise, other types of physical training, nutrition and diet, and other ways to get fit."
-        },
-        "work11": 
-        {
-            "title": "LeadHunters",
-            "description": "Corporate website designed for presenting a LeadHunters company."
-        },
-        "work12": 
-        {
-            "title": "StoreIt",
-            "description": "A Google Drive clone application, StoreIt, designed to provide users with a platform for storing, managing, and sharing files. This project demonstrates core functionalities of a cloud storage system with a user-friendly interface and robust backend."
+        "petProjects": {
+            "work1": 
+            {
+                "title": "Diagram",
+                "description": "Social Media App that enable users to create and share content and participate in social networking."
+            },
+            "work2": 
+            {
+                "title": "E-Shop",
+                "description": "Online shop, browse product catalogs, create wish lists, add items to a cart, and complete purchases. It also provides payment processing, shipping, and order management capabilities."
+            },
+            "work3": 
+            {
+                "title": "Weather",
+                "description": "Stay informed and prepared with Weather App, your ultimate companion for real-time weather updates and forecasts! Designed with a user-friendly interface."
+            },
+            "work4": 
+            {
+                "title": "Apple iPhone15",
+                "description": "This project focuses on rebuilding the Apple iPhone 15 Pro website by integrating GSAP animations and 3D effects using Three.js. It provides a comprehensive tutorial on creating everything from unique animations to interactive 3D models."
+            },
+            "work5": 
+            {
+                "title": "Trendy",
+                "description": "Trendy Dashboard for Ecommerce Shop."
+            },
+            "work6": 
+            {
+                "title": "Xora",
+                "description": "XORA AI Video Editor - SaaS Landing Page."
+            },
+            "work7": 
+            {
+                "title": "Tracker",
+                "description": "Track your progress, motivate your efforts, and celebrate your successes - SaaS Landing Page."
+            },
+            "work8": 
+            {
+                "title": "Mohanad's Portfolio",
+                "description": "A 3D Marketing Portfolio describes Mohanad's expertise as a Marketer."
+            },
+            "work9": 
+            {
+                "title": "Aora",
+                "description": "Social Media App that enable users to create and share content and participate in social networking."
+            },
+            "work10": 
+            {
+                "title": "Fitness",
+                "description": "Fitness app designed to help with exercise, other types of physical training, nutrition and diet, and other ways to get fit."
+            },
+            "work11": 
+            {
+                "title": "LeadHunters",
+                "description": "Corporate website designed for presenting a LeadHunters company."
+            },
+            "work12": 
+            {
+                "title": "StoreIt",
+                "description": "A Google Drive clone application, StoreIt, designed to provide users with a platform for storing, managing, and sharing files. This project demonstrates core functionalities of a cloud storage system with a user-friendly interface and robust backend."
+            }
         }
     },
     "contact": 

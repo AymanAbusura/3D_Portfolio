@@ -2,15 +2,15 @@
 /* eslint-disable react-refresh/only-export-components */
 import { useState } from "react";
 import { Tilt } from "react-tilt";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { styles } from "../styles";
 import { github, demo } from "../assets";
 import { SectionWrapper } from "../hoc";
-import { projects } from "../constants";
-import { getProjects } from "../constants/index-translated";
+// import { projects, petProjects } from "../constants";
+import { getProjects, getPetProjects } from "../constants/index-translated";
 import { fadeIn, textVariant } from "../utils/motion";
 import { useTranslation } from 'react-i18next';
-import { AnimatePresence } from "framer-motion";
+import clsx from "clsx";
 
 const ProjectCard = ({
   index,
@@ -22,9 +22,9 @@ const ProjectCard = ({
   source_code_link,
 }) => {
   return (
-    <motion.div 
+    <motion.div
       variants={fadeIn("up", "spring", index * 0.2, 0.75)}
-      initial="hidden" 
+      initial="hidden"
       animate="show"
       exit={{ opacity: 0, y: 20 }}
     >
@@ -34,7 +34,7 @@ const ProjectCard = ({
           scale: 1,
           speed: 450,
         }}
-        className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
+        className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full h-full"
       >
         <div className="relative w-full h-[230px] cursor-pointer">
           <img
@@ -52,12 +52,12 @@ const ProjectCard = ({
               <img
                 src={github}
                 alt="source code"
-                className="w-1/2 h-1/2 object-contain cursor-pointer"
+                className="w-1/2 h-1/2 object-contain"
                 loading="lazy"
               />
             </div>
 
-            {preview ? (
+            {preview && (
               <div
                 onClick={() => window.open(preview, "_blank")}
                 className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
@@ -65,11 +65,11 @@ const ProjectCard = ({
                 <img
                   src={demo}
                   alt="demo preview"
-                  className="w-1/2 h-1/2 object-contain cursor-pointer"
+                  className="w-1/2 h-1/2 object-contain"
                   loading="lazy"
                 />
               </div>
-            ) : null}
+            )}
           </div>
         </div>
 
@@ -90,16 +90,26 @@ const ProjectCard = ({
   );
 };
 
-const Works = () => {
+const Projects = () => {
   const { t } = useTranslation();
-  const [visibleCount, setVisibleCount] = useState(3);
+  const [visibleProjects, setVisibleProjects] = useState(3);
+  const [visiblePetProjects, setVisiblePetProjects] = useState(3);
+  const [showProjects, setShowProjects] = useState(true);
 
-  const loadMoreProjects = () => {
-    setVisibleCount((prevCount) => Math.min(prevCount + 3, projects.length));
+  const allProjects = Object.values(getProjects(t));
+  const allPetProjects = Object.values(getPetProjects(t));
+
+  const currentItems = showProjects ? allProjects : allPetProjects;
+  const visibleCount = showProjects ? visibleProjects : visiblePetProjects;
+  const isLoadMoreVisible = visibleCount < currentItems.length;
+
+  const handleLoadMore = () => {
+    if (showProjects) {
+      setVisibleProjects((prev) => prev + 3);
+    } else {
+      setVisiblePetProjects((prev) => prev + 3);
+    }
   };
-
-  // Translate project descriptions on render
-  const translatedProjects = getProjects(t);
 
   return (
     <>
@@ -117,19 +127,49 @@ const Works = () => {
         </motion.p>
       </div>
 
-      <div className="mt-20 flex flex-wrap md:justify-center gap-7">
+      <div className="relative z-4 mx-auto mt-[20px] flex w-[375px] rounded-3xl border-[3px] border-s4/25 bg-s1/50 p-2 backdrop-blur-[6px] max-md:w-[310px]">
+        <button
+          className={clsx(
+            styles.projectsHeadBtn,
+            showProjects && "text-p4 font-bold bg-[rgb(21_16_48_/_var(--tw-bg-opacity))] bg-opacity-100 rounded-xl"
+          )}
+          onClick={() => setShowProjects(true)}
+        >
+          {t("works.toggle_title")}
+        </button>
+
+        <button
+          className={clsx(
+            styles.projectsHeadBtn,
+            !showProjects && "text-p4 font-bold bg-[rgb(21_16_48_/_var(--tw-bg-opacity))] bg-opacity-100 rounded-xl"
+          )}
+          onClick={() => setShowProjects(false)}
+        >
+          {t("works.toggle_title2")}
+        </button>
+
+        <div
+          className={clsx(
+            styles.projectsHeadBtnBefore,
+            "g4 rounded-14 before:h-100 absolute left-2 top-2 h-[calc(100%-16px)] w-[calc(50%-8px)] overflow-hidden shadow-400 transition-transform duration-500",
+            !showProjects && "translate-x-full"
+          )}
+        />
+      </div>
+
+      <div className="mt-10 flex flex-wrap md:justify-center gap-7">
         <AnimatePresence>
-          {translatedProjects.slice(0, visibleCount).map((project, index) => (
+          {currentItems.slice(0, visibleCount).map((project, index) => (
             <ProjectCard key={`project-${index}`} index={index} {...project} />
           ))}
         </AnimatePresence>
       </div>
 
-      {visibleCount < projects.length && (
+      {isLoadMoreVisible && (
         <div className="mt-10 flex justify-center">
           <button
-            onClick={loadMoreProjects}
-            className="bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary hover:bg-blue-500"
+            onClick={handleLoadMore}
+            className="bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary hover:bg-[#915EFF]"
           >
             {t("works.loadMore")}
           </button>
@@ -139,4 +179,5 @@ const Works = () => {
   );
 };
 
-export default SectionWrapper(Works, "");
+
+export default SectionWrapper(Projects, "projects");

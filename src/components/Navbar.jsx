@@ -16,7 +16,8 @@ const Navbar = () => {
   const sectionMap = {
     box2: "about",
     box3: "work",
-    box4: "contact",
+    box4: "projects",
+    box5: "contact",
   };
 
   return (
@@ -35,7 +36,7 @@ const Navbar = () => {
         </Link>
 
         <ul className="list-none hidden lg:flex flex-row gap-10">
-          {['box2', 'box3', 'box4'].map((key, idx) => (
+          {['box2', 'box3', 'box4', 'box5'].map((key, idx) => (
             <li
               key={idx}
               className={`${active === key ? "text-white" : "text-secondary"} font-poppins font-medium cursor-pointer text-[16px] lg:text-[18px]`}
@@ -65,7 +66,7 @@ const Navbar = () => {
 
           <div className={`${!toggle ? 'hidden' : 'flex'} p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}>
             <ul className="list-none flex justify-end items-start flex-col gap-4">
-              {['box2', 'box3', 'box4'].map((key, idx) => (
+              {['box2', 'box3', 'box4', 'box5'].map((key, idx) => (
                 <li
                   key={idx}
                   className={`${active === key ? "text-white" : "text-secondary"} font-poppins font-medium cursor-pointer text-[16px]`}

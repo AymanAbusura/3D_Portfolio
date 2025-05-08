@@ -30,7 +30,7 @@ const Top = () => {
     return (
         <button
             onClick={topFunction}
-            className={`hover:bg-blue-500 myBtn ${showBtn ? "show" : "none"} `}
+            className={`hover:bg-[#915EFF] myBtn ${showBtn ? "show" : "none"} `}
             title="Go to top"
             style={{
                 position: "fixed",

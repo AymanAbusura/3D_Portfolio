@@ -35,7 +35,7 @@ const Hero = () => {
             <a
               href={resumeLink}
               download={resumeFileName}
-              className="relative bg-tertiary py-4 px-10 rounded-xl outline-none text-white font-bold shadow-md shadow-primary hover:bg-blue-500 z-30 inline-block text-center"
+              className="relative bg-tertiary py-4 px-10 rounded-xl outline-none text-white font-bold shadow-md shadow-primary hover:bg-[#915EFF] z-30 inline-block text-center"
             >
               {t("hero.resume")}
             </a>

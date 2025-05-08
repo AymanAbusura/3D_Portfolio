@@ -6,6 +6,19 @@ import {
     nozzum, 
     leadhunters, 
     coursera, 
+    darkyellowprelandingpage,
+    redlandingpage,
+    darkgreenprelandingpage,
+    grayprelandingpage,
+    greenprelandingpage,
+    orangepage,
+    shinycryptopage,
+    cryptoplatform,
+    moderncryptolandingpage,
+    maincryptolanding,
+    whitelandingpage,
+    modrenpinkpurplecryptolandingpage,
+    ironmasterpage,
     diagram, 
     ecommerce, 
     fitness, 
@@ -124,11 +137,170 @@ import {
       link: import.meta.env.VITE_APP_CERTIFICATION_LINK6,
     },
   ];
-  
+
   export const getProjects = (t) => [
     {
+      name: "Dark Yellow Prelanding Page",
+      description: t("works.projects.work1.description"),
+      tags: [
+        { name: "HTML", color: "blue-text-gradient" },
+        { name: "CSS", color: "purple-text-gradient" },
+        { name: "JS", color: "green-text-gradient" },
+      ],
+      image: darkyellowprelandingpage,
+      preview: import.meta.env.VITE_APP_PROJECT_PREVIEW1,
+      source_code_link: import.meta.env.VITE_APP_PROJECT_LINK1,
+    },
+    {
+      name: "Red PreLanding Page",
+      description: t("works.projects.work2.description"),
+      tags: [
+        { name: "HTML", color: "blue-text-gradient" },
+        { name: "CSS", color: "purple-text-gradient" },
+        { name: "JS", color: "green-text-gradient" },
+      ],
+      image: redlandingpage,
+      preview: import.meta.env.VITE_APP_PROJECT_PREVIEW2,
+      source_code_link: import.meta.env.VITE_APP_PROJECT_LINK2,
+    },
+    {
+      name: "Dark Green PreLanding Page",
+      description: t("works.projects.work3.description"),
+      tags: [
+        { name: "HTML", color: "blue-text-gradient" },
+        { name: "CSS", color: "purple-text-gradient" },
+        { name: "JS", color: "green-text-gradient" },
+      ],
+      image: darkgreenprelandingpage,
+      preview: import.meta.env.VITE_APP_PROJECT_PREVIEW3,
+      source_code_link: import.meta.env.VITE_APP_PROJECT_LINK3,
+    },
+    {
+      name: "Gray Prelanding Page",
+      description: t("works.projects.work4.description"),
+      tags: [
+        { name: "HTML", color: "blue-text-gradient" },
+        { name: "CSS", color: "purple-text-gradient" },
+        { name: "JS", color: "green-text-gradient" },
+      ],
+      image: grayprelandingpage,
+      preview: import.meta.env.VITE_APP_PROJECT_PREVIEW4,
+      source_code_link: import.meta.env.VITE_APP_PROJECT_LINK4,
+    },
+    {
+      name: "Green Prelanding Page",
+      description: t("works.projects.work5.description"),
+      tags: [
+        { name: "HTML", color: "blue-text-gradient" },
+        { name: "CSS", color: "purple-text-gradient" },
+        { name: "JS", color: "green-text-gradient" },
+      ],
+      image: greenprelandingpage,
+      preview: import.meta.env.VITE_APP_PROJECT_PREVIEW5,
+      source_code_link: import.meta.env.VITE_APP_PROJECT_LINK5,
+    },
+    {
+      name: "Orange Colored Page",
+      description: t("works.projects.work6.description"),
+      tags: [
+        { name: "HTML", color: "blue-text-gradient" },
+        { name: "CSS", color: "purple-text-gradient" },
+        { name: "JS", color: "green-text-gradient" },
+      ],
+      image: orangepage,
+      preview: import.meta.env.VITE_APP_PROJECT_PREVIEW6,
+      source_code_link: import.meta.env.VITE_APP_PROJECT_LINK6,
+    },
+    {
+      name: "White Landing Page",
+      description: t("works.projects.work7.description"),
+      tags: [
+        { name: "HTML", color: "blue-text-gradient" },
+        { name: "CSS", color: "purple-text-gradient" },
+        { name: "JS", color: "green-text-gradient" },
+      ],
+      image: whitelandingpage,
+      preview: import.meta.env.VITE_APP_PROJECT_PREVIEW7,
+      source_code_link: import.meta.env.VITE_APP_PROJECT_LINK7,
+    },
+    {
+      name: "Shiny Crypto Page",
+      description: t("works.projects.work8.description"),
+      tags: [
+        { name: "HTML", color: "blue-text-gradient" },
+        { name: "CSS", color: "purple-text-gradient" },
+        { name: "JS", color: "green-text-gradient" },
+      ],
+      image: shinycryptopage,
+      preview: import.meta.env.VITE_APP_PROJECT_PREVIEW8,
+      source_code_link: import.meta.env.VITE_APP_PROJECT_LINK8,
+    },
+    {
+      name: "Main Crypto Landing Page",
+      description: t("works.projects.work9.description"),
+      tags: [
+        { name: "HTML", color: "blue-text-gradient" },
+        { name: "CSS", color: "purple-text-gradient" },
+        { name: "JS", color: "green-text-gradient" },
+      ],
+      image: maincryptolanding,
+      preview: import.meta.env.VITE_APP_PROJECT_PREVIEW9,
+      source_code_link: import.meta.env.VITE_APP_PROJECT_LINK9,
+    },
+    {
+      name: "Modren Pink Purple Crypto Landing Page",
+      description: t("works.projects.work10.description"),
+      tags: [
+        { name: "HTML", color: "blue-text-gradient" },
+        { name: "CSS", color: "purple-text-gradient" },
+        { name: "JS", color: "green-text-gradient" },
+      ],
+      image: modrenpinkpurplecryptolandingpage,
+      preview: import.meta.env.VITE_APP_PROJECT_PREVIEW10,
+      source_code_link: import.meta.env.VITE_APP_PROJECT_LINK10,
+    },
+    {
+      name: "Modern Crypto Landing Page",
+      description: t("works.projects.work11.description"),
+      tags: [
+        { name: "HTML", color: "blue-text-gradient" },
+        { name: "CSS", color: "purple-text-gradient" },
+        { name: "JS", color: "green-text-gradient" },
+      ],
+      image: moderncryptolandingpage,
+      preview: import.meta.env.VITE_APP_PROJECT_PREVIEW11,
+      source_code_link: import.meta.env.VITE_APP_PROJECT_LINK11,
+    },
+    {
+      name: "Crypto Platform",
+      description: t("works.projects.work12.description"),
+      tags: [
+        { name: "HTML", color: "blue-text-gradient" },
+        { name: "CSS", color: "purple-text-gradient" },
+        { name: "JS", color: "green-text-gradient" },
+      ],
+      image: cryptoplatform,
+      preview: import.meta.env.VITE_APP_PROJECT_PREVIEW12,
+      source_code_link: import.meta.env.VITE_APP_PROJECT_LINK12,
+    },
+    {
+      name: "IronMaster Page",
+      description: t("works.projects.work13.description"),
+      tags: [
+        { name: "HTML", color: "blue-text-gradient" },
+        { name: "CSS", color: "purple-text-gradient" },
+        { name: "JS", color: "green-text-gradient" },
+      ],
+      image: ironmasterpage,
+      preview: import.meta.env.VITE_APP_PROJECT_PREVIEW13,
+      source_code_link: import.meta.env.VITE_APP_PROJECT_LINK13,
+    },
+  ];
+  
+  export const getPetProjects = (t) => [
+    {
       name: "Diagram",
-      description: t("works.work1.description"),
+      description: t("works.petProjects.work1.description"),
       tags: [
         { name: "react", color: "blue-text-gradient" },
         { name: "Vite", color: "blue-text-gradient" },
@@ -143,7 +315,7 @@ import {
     },
     {
       name: "E-Shop",
-      description: t("works.work2.description"),
+      description: t("works.petProjects.work2.description"),
       tags: [
         { name: "react", color: "blue-text-gradient" },
         { name: "next", color: "green-text-gradient" },
@@ -156,7 +328,7 @@ import {
     },
     {
       name: "StoreIt",
-      description: t("works.work12.description"),
+      description: t("works.petProjects.work12.description"),
       tags: [
         { name: "Next", color: "blue-text-gradient" },
         { name: "tailwind", color: "pink-text-gradient" },
@@ -169,7 +341,7 @@ import {
     },
     {
       name: "Weather",
-      description: t("works.work3.description"),
+      description: t("works.petProjects.work3.description"),
       tags: [
         { name: "Next", color: "blue-text-gradient" },
         { name: "tailwind", color: "pink-text-gradient" },
@@ -181,7 +353,7 @@ import {
     },
     {
       name: "Apple iPhone15",
-      description: t("works.work4.description"),
+      description: t("works.petProjects.work4.description"),
       tags: [
         { name: "react", color: "blue-text-gradient" },
         { name: "vite", color: "blue-text-gradient" },
@@ -195,7 +367,7 @@ import {
     },
     {
       name: "Trendy",
-      description: t("works.work5.description"),
+      description: t("works.petProjects.work5.description"),
       tags: [
         { name: "react", color: "blue-text-gradient" },
         { name: "Syncfusion", color: "red-text-gradient" },
@@ -207,7 +379,7 @@ import {
     },
     {
       name: "Xora",
-      description: t("works.work6.description"),
+      description: t("works.petProjects.work6.description"),
       tags: [
         { name: "react", color: "blue-text-gradient" },
         { name: "Vite", color: "blue-text-gradient" },
@@ -219,7 +391,7 @@ import {
     },
     {
       name: "Tracker",
-      description: t("works.work7.description"),
+      description: t("works.petProjects.work7.description"),
       tags: [
         { name: "react", color: "blue-text-gradient" },
         { name: "next", color: "blue-text-gradient" },
@@ -232,7 +404,7 @@ import {
     },
     {
       name: "Mohanad's Portfolio",
-      description: t("works.work8.description"),
+      description: t("works.petProjects.work8.description"),
       tags: [
         { name: "react", color: "blue-text-gradient" },
         { name: "vite", color: "blue-text-gradient" },
@@ -246,7 +418,7 @@ import {
     },
     {
       name: "Aora",
-      description: t("works.work9.description"),
+      description: t("works.petProjects.work9.description"),
       tags: [
         { name: "reactNative", color: "blue-text-gradient" },
         { name: "expo", color: "blue-text-gradient" },
@@ -260,7 +432,7 @@ import {
     },
     {
       name: "Fitness",
-      description: t("works.work10.description"),
+      description: t("works.petProjects.work10.description"),
       tags: [
         { name: "react", color: "blue-text-gradient" },
         { name: "rapidAPI's", color: "green-text-gradient" },
@@ -272,7 +444,7 @@ import {
     },
     {
       name: "LeadHunters",
-      description: t("works.work11.description"),
+      description: t("works.petProjects.work11.description"),
       tags: [
         { name: "react", color: "blue-text-gradient" },
         { name: "css", color: "pink-text-gradient" },

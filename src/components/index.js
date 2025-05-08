@@ -5,7 +5,7 @@ import Navbar from './Navbar';
 import About from './About';
 import Tech from './Tech';
 import Experience from './Experience';
-import Works from './Works';
+import Projects from './Projects';
 import Certification from './Certification';
 import Contact from './Contact';
 import Footer from './Footer';
@@ -19,7 +19,7 @@ export {
   About,
   Tech,
   Experience,
-  Works,
+  Projects,
   Certification,
   Contact,
   EarthCanvas, 
