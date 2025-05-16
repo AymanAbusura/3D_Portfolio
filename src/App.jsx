@@ -1,13 +1,13 @@
 import { BrowserRouter } from "react-router-dom";
 
-import { About, Contact, Experience, Certification, ParticlesBackground, Hero, Navbar, Tech, Projects, StarsCanvas, Footer, Top } from './components'
+import { About, Contact, Experience, Certification, Hero, Navbar, Tech, Projects, StarsCanvas, Footer, Top } from './components'
 
 const App = () => {
   return (
     <BrowserRouter>
       <div className="relative z-0 bg-primary">
         <div className="relative">
-          <ParticlesBackground />
+          {/* <ParticlesBackground /> */}
           <Navbar />
           <Hero />
         </div>
