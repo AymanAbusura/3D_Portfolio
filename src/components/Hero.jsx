@@ -39,7 +39,7 @@ const Hero = () => {
 
         <div className="flex-1">
           <h1 className={`${styles.heroHeadText} text-white`}>
-            {t("hero.greeting")} <span className="text-[#915EFF]">{t("hero.name")}</span>
+            {t("hero.greeting", "Hello, I'm")} <span className="text-[#915EFF]">{t("hero.name", "Ayman")}</span>
           </h1>
 
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
