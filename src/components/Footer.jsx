@@ -14,23 +14,23 @@ const Footer = () => {
         </div>
   
         <div className="flex gap-3">
-          <div className="social-icon cursor-pointer hover:bg-[#915EFF]" onClick={() => window.open(import.meta.env.VITE_APP_GITHUB, "_blank")}>
-            <img src={github} alt="github" className="w-1/2 h-1/2 object-contain cursor-pointer" loading="lazy" />
-          </div>
-          <div className="social-icon cursor-pointer hover:bg-[#915EFF]" onClick={() => window.open(import.meta.env.VITE_APP_LINKEDIN, "_blank")}>
-            <img src={linkedin} alt="linkedin" className="w-1/2 h-1/2 object-contain cursor-pointer" loading="lazy" />
-          </div>
-          <div className="social-icon cursor-pointer hover:bg-[#915EFF]" onClick={() => window.open(import.meta.env.VITE_APP_HH, "_blank")}>
-            <img src={hh} alt="hh" className="w-1/2 h-1/2 object-contain cursor-pointer" loading="lazy" />
-          </div>
-          <div className="social-icon cursor-pointer hover:bg-[#915EFF]" onClick={() => window.open(import.meta.env.VITE_APP_HABR, "_blank")}>
-            <img src={habr} alt="habr" className="w-1/2 h-1/2 object-contain cursor-pointer" loading="lazy" />
-          </div>
-          <div className="social-icon cursor-pointer hover:bg-[#915EFF]" onClick={() => window.open(import.meta.env.VITE_APP_TELEGRAM, "_blank")}>
-            <img src={telegram} alt="telegram" className="w-1/2 h-1/2 object-contain cursor-pointer" loading="lazy" />
-          </div>
+          <a href="https://github.com/AymanAbusura" target="_blank" rel="noopener noreferrer" className="social-icon cursor-pointer hover:bg-[#915EFF]">
+            <img src={github} alt="github" className="w-1/2 h-1/2 object-contain" loading="lazy" />
+          </a>
+          <a href="https://www.linkedin.com/in/AymanAbusura" target="_blank" rel="noopener noreferrer" className="social-icon cursor-pointer hover:bg-[#915EFF]">
+            <img src={linkedin} alt="linkedin" className="w-1/2 h-1/2 object-contain" loading="lazy" />
+          </a>
+          <a href="https://hh.ru/resume/b43a6c14ff0c5269c30039ed1f376c656e4852" target="_blank" rel="noopener noreferrer" className="social-icon cursor-pointer hover:bg-[#915EFF]">
+            <img src={hh} alt="hh" className="w-1/2 h-1/2 object-contain" loading="lazy" />
+          </a>
+          <a href="https://career.habr.com/aymanabusura" target="_blank" rel="noopener noreferrer" className="social-icon cursor-pointer hover:bg-[#915EFF]">
+            <img src={habr} alt="habr" className="w-1/2 h-1/2 object-contain" loading="lazy" />
+          </a>
+          <a href="https://t.me/ayman_abusura96" target="_blank" rel="noopener noreferrer" className="social-icon cursor-pointer hover:bg-[#915EFF]">
+            <img src={telegram} alt="telegram" className="w-1/2 h-1/2 object-contain" loading="lazy" />
+          </a>
         </div>
-  
+        
         <p className="text-white-500">{t("footer.box3")}</p>
       </footer>
     );

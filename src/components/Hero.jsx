@@ -1,13 +1,23 @@
 import { Suspense, lazy, useEffect, useState } from 'react';
+import { motion } from 'framer-motion';
 
 import { styles } from "../styles";
 import resumeEnglish from '../assets/resume/ResumeEN.pdf';
 import resumeRussian from '../assets/resume/ResumeRU.pdf';
-
-// Add translation
+import { github, linkedin, hh, habr, telegram } from "../assets";
 import { useTranslation } from 'react-i18next';
 
 const HeroImage = lazy(() => import('./HeroImage'));
+
+const textVariant = {
+  hidden: { opacity: 0, y: 30 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
+};
+
+const iconVariant = {
+  hidden: { opacity: 0, y: 10 },
+  visible: { opacity: 1, y: 0 },
+};
 
 const Hero = () => {
   const { t, i18n } = useTranslation();
@@ -23,31 +33,53 @@ const Hero = () => {
       const ismobile = window.innerWidth < 767;
       if (ismobile !== isMobile) setIsMobile(ismobile);
     };
-    
+
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, [isMobile]);
 
   return (
     <section className="relative w-full h-[75vh] mx-auto z-40" aria-label="Hero section">
-      <div
-        className={`absolute inset-0 top-[120px] max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-10 z-40`}
-      >
-        <div className="flex flex-col justify-center items-center mt-5">
-          <div className="w-5 h-5 rounded-full bg-[#915EFF]" />
-          <div className="w-1 sm:h-80 h-40 violet-gradient" />
-        </div>
+      <div className={`absolute inset-0 top-[120px] max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-10 max-[320px]:gap-1 z-40`}>
+        <motion.div
+          className="flex flex-col justify-center items-center mt-5"
+          initial="hidden"
+          animate="visible"
+          variants={{
+            visible: { transition: { staggerChildren: 0.3 } },
+          }}
+        >
+          <motion.div
+            className="w-5 h-5 rounded-full bg-[#915EFF]"
+            initial={{ scale: 0, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            transition={{ duration: 0.5, ease: 'easeOut' }}
+          />
+          <motion.div
+            className="w-1 sm:h-80 h-40 violet-gradient origin-top"
+            initial={{ scaleY: 0 }}
+            animate={{ scaleY: 1 }}
+            transition={{ duration: 0.8, ease: 'easeOut', delay: 0.2 }}
+          />
+        </motion.div>
 
-        <div className="flex-1">
-          <h1 className={`${styles.heroHeadText} text-white`}>
+        <motion.div
+          className="flex-1"
+          initial="hidden"
+          animate="visible"
+          variants={{
+            visible: { transition: { staggerChildren: 0.2 } },
+          }}
+        >
+          <motion.h1 className={`${styles.heroHeadText} text-white`} variants={textVariant}>
             {t('hero.greeting', 'Hi, I\'m')} <span className="text-purple-500">{t('hero.name', 'Ayman')}</span>
-          </h1>
+          </motion.h1>
 
-          <p className={`${styles.heroSubText} mt-2 text-white-100`}>
+          <motion.p className={`${styles.heroSubText} mt-2 text-white-100`} variants={textVariant}>
             {t("hero.description")}
-          </p>
+          </motion.p>
 
-          <div className="mt-10">
+          <motion.div className="mt-10" variants={textVariant}>
             <a
               href={resumeLink}
               download={resumeFileName}
@@ -55,15 +87,44 @@ const Hero = () => {
             >
               {t("hero.resume")}
             </a>
-          </div>
-        </div>
-        
+          </motion.div>
+
+          <motion.div
+            className="flex gap-4 max-[320px]:gap-2 mt-6"
+            initial="hidden"
+            animate="visible"
+            variants={{
+              visible: { transition: { staggerChildren: 0.1 } },
+            }}
+          >
+            {[github, linkedin, hh, habr, telegram].map((icon, index) => (
+              <motion.a
+                key={index}
+                href={
+                  [
+                    "https://github.com/AymanAbusura",
+                    "https://www.linkedin.com/in/AymanAbusura",
+                    "https://hh.ru/resume/b43a6c14ff0c5269c30039ed1f376c656e4852",
+                    "https://career.habr.com/aymanabusura",
+                    "https://t.me/ayman_abusura96",
+                  ][index]
+                }
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 rounded-full bg-white/10 hover:bg-[#915EFF] flex items-center justify-center transition duration-300"
+                variants={iconVariant}
+              >
+                <img src={icon} alt="social-icon" className="w-5 h-5 object-contain" loading="lazy" />
+              </motion.a>
+            ))}
+          </motion.div>
+        </motion.div>
+
         {!isMobile && (
           <Suspense fallback={null}>
             <HeroImage />
           </Suspense>
         )}
-
       </div>
     </section>
   );
