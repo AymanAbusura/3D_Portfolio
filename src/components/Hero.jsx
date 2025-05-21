@@ -124,29 +124,17 @@ const Hero = () => {
             className="w-[400px] h-[400px] rounded-full overflow-hidden"
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, ease: 'easeOut', delay: 0.3 }}
+            transition={{ duration: 0.6, ease: 'easeOut' }}
           >
             <picture>
-  <source srcSet={photo800} media="(min-width: 768px)" type="image/webp" />
-  <source srcSet={photo400} media="(min-width: 480px)" type="image/webp" />
-  <img
-    src={photo400}
-    alt="Hero"
-    className="w-full h-full object-cover"
-    loading="lazy"
-  />
-</picture>
-
-            {/* <picture>
-              <source srcSet={photo} media="(min-width: 768px)" type="image/webp" />
-              <source srcSet={photo} media="(min-width: 480px)" type="image/webp" />
+              <source srcSet={photo800} media="(min-width: 768px)" type="image/webp" />
+              <source srcSet={photo400} media="(min-width: 480px)" type="image/webp" />
               <img
-                src={photo}
+                src={photo400}
                 alt="Hero"
                 className="w-full h-full object-cover"
-                loading="lazy"
               />
-            </picture> */}
+            </picture>
           </motion.div>
         )}
       </div>
