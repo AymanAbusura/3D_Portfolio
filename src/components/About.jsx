@@ -71,14 +71,6 @@ const About = () => {
         <Tilt className='xs:w-[250px] w-full'>
           <LazyMotion features={domAnimation}>
             <m.div variants={fadeIn("right", "spring", 0.5, 0.75)}>
-              {/* <img 
-                src={photo}
-                alt="Ayman"
-                className={`${isMobile ? 'hidden' : 'w-[250px] rounded-[20px] min-h-[280px] flex justify-evenly items-center flex-col'}`}
-                width="250"
-                height="280"
-                loading={isMobile ? "lazy" : undefined}
-              /> */}
               <picture>
                 <source srcSet={photo800} media="(min-width: 768px)" type="image/webp" />
                 <source srcSet={photo400} media="(min-width: 480px)" type="image/webp" />
