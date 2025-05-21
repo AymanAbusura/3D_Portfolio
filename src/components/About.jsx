@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unknown-property */
 /* eslint-disable no-unused-vars */
 /* eslint-disable react-refresh/only-export-components */
 /* eslint-disable react/prop-types */
@@ -11,7 +12,7 @@ import { services } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 
-import { photo } from '../assets';
+import { photo400, photo800 } from '../assets';
 
 // i18n
 import { useTranslation } from 'react-i18next';
@@ -70,14 +71,27 @@ const About = () => {
         <Tilt className='xs:w-[250px] w-full'>
           <LazyMotion features={domAnimation}>
             <m.div variants={fadeIn("right", "spring", 0.5, 0.75)}>
-              <img 
+              {/* <img 
                 src={photo}
                 alt="Ayman"
                 className={`${isMobile ? 'hidden' : 'w-[250px] rounded-[20px] min-h-[280px] flex justify-evenly items-center flex-col'}`}
                 width="250"
                 height="280"
                 loading={isMobile ? "lazy" : undefined}
-              />
+              /> */}
+              <picture>
+                <source srcSet={photo800} media="(min-width: 768px)" type="image/webp" />
+                <source srcSet={photo400} media="(min-width: 480px)" type="image/webp" />
+                <img
+                  src={photo400}
+                  alt="Ayman"
+                  width={250}
+                  height={250}
+                  fetchpriority="high"
+                  className={`${isMobile ? 'hidden' : 'w-[250px] rounded-[20px] min-h-[280px] flex justify-evenly items-center flex-col'}`}
+                  loading={isMobile ? "lazy" : undefined}
+                />
+              </picture>
             </m.div>
           </LazyMotion>
         </Tilt>
