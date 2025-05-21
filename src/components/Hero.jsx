@@ -122,7 +122,7 @@ const Hero = () => {
 
           {!isMobile && (
             <m.div
-              className="w-[300px] h-[300px] rounded-full overflow-hidden"
+              className="w-[250px] h-[250px] rounded-full overflow-hidden"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.4, ease: 'easeOut' }}
@@ -133,8 +133,8 @@ const Hero = () => {
                 <img
                   src={photo400}
                   alt="Hero"
-                  width={300}
-                  height={300}
+                  width={250}
+                  height={250}
                   fetchpriority="high"
                   className="w-full h-full object-cover"
                 />
