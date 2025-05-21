@@ -2,13 +2,13 @@
 /* eslint-disable react-refresh/only-export-components */
 import { useState } from "react";
 import { Tilt } from "react-tilt";
-import { motion, AnimatePresence } from "framer-motion";
+import { LazyMotion, domAnimation, m, AnimatePresence } from "framer-motion";
 import { styles } from "../styles";
 import { github, demo } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { getProjects, getPetProjects } from "../constants/index-translated";
 import { fadeIn, textVariant } from "../utils/motion";
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from "react-i18next";
 import clsx from "clsx";
 
 const ProjectCard = ({
@@ -21,11 +21,12 @@ const ProjectCard = ({
   source_code_link,
 }) => {
   return (
-    <motion.div
+    <m.div
       variants={fadeIn("up", "spring", index * 0.2, 0.75)}
       initial="hidden"
       animate="show"
       exit={{ opacity: 0, y: 20 }}
+      layout
     >
       <Tilt
         options={{
@@ -38,7 +39,7 @@ const ProjectCard = ({
         <div className="relative w-full h-[230px] cursor-pointer">
           <img
             src={image}
-            alt="project_image"
+            alt={`${name} project image`}
             className="w-full h-full object-contain rounded-2xl"
             loading="lazy"
           />
@@ -79,13 +80,16 @@ const ProjectCard = ({
 
         <div className="mt-4 flex flex-wrap gap-2">
           {tags.map((tag) => (
-            <p key={`${name}-${tag.name}`} className={`text-[14px] ${tag.color}`}>
+            <p
+              key={`${name}-${tag.name}`}
+              className={`text-[14px] ${tag.color}`}
+            >
               #{tag.name}
             </p>
           ))}
         </div>
       </Tilt>
-    </motion.div>
+    </m.div>
   );
 };
 
@@ -111,26 +115,31 @@ const Projects = () => {
   };
 
   return (
-    <>
-      <motion.div variants={textVariant()}>
-        <p className={`${styles.sectionSubText}`}>{t("works.header1")}</p>
-        <h2 className={`${styles.sectionHeadText}`}>{t("works.header2")}</h2>
-      </motion.div>
+    <LazyMotion features={domAnimation}>
+      <m.div variants={textVariant()} initial="hidden" animate="show">
+        <p className={styles.sectionSubText}>{t("works.header1")}</p>
+        <h2 className={styles.sectionHeadText}>{t("works.header2")}</h2>
+      </m.div>
 
       <div className="w-full flex">
-        <motion.p
+        <m.p
           variants={fadeIn("", "", 0.1, 1)}
+          initial="hidden"
+          animate="show"
           className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
         >
           {t("works.description")}
-        </motion.p>
+        </m.p>
       </div>
 
-      <div className="relative z-4 mx-auto mt-[20px] flex w-[375px] rounded-3xl border-[3px] border-s4/25 bg-s1/50 p-2 backdrop-blur-[6px] max-md:w-[310px]">
+      <div
+        className="relative z-4 mx-auto mt-[20px] flex w-[375px] rounded-3xl border-[3px] border-s4/25 bg-s1/50 p-2 backdrop-blur-[6px] max-md:w-[310px]"
+      >
         <button
           className={clsx(
             styles.projectsHeadBtn,
-            showProjects && "text-p4 font-bold bg-[rgb(21_16_48_/_var(--tw-bg-opacity))] bg-opacity-100 rounded-xl"
+            showProjects &&
+              "text-p4 font-bold bg-[rgb(21_16_48_/_var(--tw-bg-opacity))] bg-opacity-100 rounded-xl"
           )}
           onClick={() => setShowProjects(true)}
         >
@@ -140,7 +149,8 @@ const Projects = () => {
         <button
           className={clsx(
             styles.projectsHeadBtn,
-            !showProjects && "text-p4 font-bold bg-[rgb(21_16_48_/_var(--tw-bg-opacity))] bg-opacity-100 rounded-xl"
+            !showProjects &&
+              "text-p4 font-bold bg-[rgb(21_16_48_/_var(--tw-bg-opacity))] bg-opacity-100 rounded-xl"
           )}
           onClick={() => setShowProjects(false)}
         >
@@ -156,13 +166,24 @@ const Projects = () => {
         />
       </div>
 
-      <div className="mt-10 flex flex-wrap md:justify-center gap-7">
-        <AnimatePresence>
+      {/* Animated projects container with key to trigger re-animation on toggle */}
+      <m.div
+        key={showProjects ? "projects" : "pet-projects"}
+        className="mt-10 flex flex-wrap md:justify-center gap-7"
+        initial="hidden"
+        animate="show"
+        exit="hidden"
+      >
+        <AnimatePresence exitBeforeEnter>
           {currentItems.slice(0, visibleCount).map((project, index) => (
-            <ProjectCard key={`project-${index}`} index={index} {...project} />
+            <ProjectCard
+              key={`project-${project.name || index}`}
+              index={index}
+              {...project}
+            />
           ))}
         </AnimatePresence>
-      </div>
+      </m.div>
 
       {isLoadMoreVisible && (
         <div className="mt-10 flex justify-center">
@@ -174,9 +195,8 @@ const Projects = () => {
           </button>
         </div>
       )}
-    </>
+    </LazyMotion>
   );
 };
-
 
 export default SectionWrapper(Projects, "projects");

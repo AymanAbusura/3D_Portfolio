@@ -2,39 +2,40 @@
 /* eslint-disable react-refresh/only-export-components */
 /* eslint-disable react/prop-types */
 
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { Tilt } from "react-tilt";
-import { motion } from "framer-motion";
+import { LazyMotion, domAnimation, m } from "framer-motion";
 
 import { styles } from "../styles";
 import { services } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 
-import { photo } from '../assets'
+import { photo } from '../assets';
 
-// Add i18n translation
+// i18n
 import { useTranslation } from 'react-i18next';
 
 const ServiceCard = ({ index, title, icon }) => (
   <Tilt className='xs:w-[250px] w-full'>
-    <motion.div
-      variants={fadeIn("right", "spring", index * 0.5, 0.75)}
-      className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card'
-    >
-      <div className='bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col'>
-        <img src={icon} alt={title} className='w-16 h-16 object-contain'/>
-        <h3 className='text-white text-[20px] font-bold text-center'>
-          {title}
-        </h3>
-      </div>
-    </motion.div>
+    <LazyMotion features={domAnimation}>
+      <m.div
+        variants={fadeIn("right", "spring", index * 0.5, 0.75)}
+        className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card'
+      >
+        <div className='bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col'>
+          <img src={icon} alt={title} className='w-16 h-16 object-contain'/>
+          <h3 className='text-white text-[20px] font-bold text-center'>
+            {title}
+          </h3>
+        </div>
+      </m.div>
+    </LazyMotion>
   </Tilt>
 );
 
 const About = () => {
   const { t } = useTranslation();
-
   const [isMobile, setIsMobile] = useState(window.innerWidth < 1200);
 
   useEffect(() => {
@@ -42,36 +43,43 @@ const About = () => {
       const ismobile = window.innerWidth < 1200;
       if (ismobile !== isMobile) setIsMobile(ismobile);
     };
-    
+
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, [isMobile]);
 
   return (
     <>
-      <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>{t("about.header1")}</p>
-        <h2 className={styles.sectionHeadText}>{t("about.header2")}</h2>
-      </motion.div>
+      <LazyMotion features={domAnimation}>
+        <m.div variants={textVariant()}>
+          <p className={styles.sectionSubText}>{t("about.header1")}</p>
+          <h2 className={styles.sectionHeadText}>{t("about.header2")}</h2>
+        </m.div>
+      </LazyMotion>
 
       <div className="lg:flex lg:justify-between gap-20">
-        <motion.p
-          variants={fadeIn("", "", 0.1, 1)}
-          className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px] text-start'
-        >
-          {t("about.description")}
-        </motion.p>
+        <LazyMotion features={domAnimation}>
+          <m.p
+            variants={fadeIn("", "", 0.1, 1)}
+            className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px] text-start'
+          >
+            {t("about.description")}
+          </m.p>
+        </LazyMotion>
+
         <Tilt className='xs:w-[250px] w-full'>
-          <motion.div variants={fadeIn("right", "spring", 0.5, 0.75)}>
-            <img 
-              src={photo} 
-              alt="Ayman" 
-              className={`${isMobile ? 'hidden' : 'w-[250px] rounded-[20px] min-h-[280px] flex justify-evenly items-center flex-col'}`}
-              width="250"
-              height="280"
-              loading={isMobile ? "lazy" : undefined}
-            />
-          </motion.div>
+          <LazyMotion features={domAnimation}>
+            <m.div variants={fadeIn("right", "spring", 0.5, 0.75)}>
+              <img 
+                src={photo}
+                alt="Ayman"
+                className={`${isMobile ? 'hidden' : 'w-[250px] rounded-[20px] min-h-[280px] flex justify-evenly items-center flex-col'}`}
+                width="250"
+                height="280"
+                loading={isMobile ? "lazy" : undefined}
+              />
+            </m.div>
+          </LazyMotion>
         </Tilt>
       </div>
 

@@ -2,7 +2,7 @@
 /* eslint-disable react-refresh/only-export-components */
 
 import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component";
-import { motion } from "framer-motion";
+import { LazyMotion, domAnimation, m } from "framer-motion";
 import "react-vertical-timeline-component/style.min.css";
 import { styles } from "../styles";
 import { getExperiences } from "../constants/index-translated";
@@ -31,7 +31,7 @@ const ExperienceCard = ({ experience }) => {
         </div>
       }
     >
-      <div onClick={() => {}}>
+      <div>
         <h3 className='text-white text-[24px] font-bold'>{experience.title}</h3>
         <p className='text-secondary text-[16px] font-semibold' style={{ margin: 0 }}>
           {experience.company_name}
@@ -64,24 +64,26 @@ const ExperienceCard = ({ experience }) => {
 const Experience = () => {
   const { t } = useTranslation();
 
-  // Get translated experiences
+  // Получаем переведённые данные
   const experiences = getExperiences(t);
 
   return (
-    <>
-      <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>{t("experience.header1")}</p>
-        <h2 className={styles.sectionHeadText}>{t("experience.header2")}</h2>
-      </motion.div>
+    <LazyMotion features={domAnimation}>
+      <>
+        <m.div variants={textVariant()}>
+          <p className={styles.sectionSubText}>{t("experience.header1")}</p>
+          <h2 className={styles.sectionHeadText}>{t("experience.header2")}</h2>
+        </m.div>
 
-      <div className='mt-20 flex flex-col'>
-        <VerticalTimeline>
-          {experiences.map((experience, index) => (
-            <ExperienceCard key={`experience-${index}`} experience={experience} />
-          ))}
-        </VerticalTimeline>
-      </div>
-    </>
+        <div className='mt-20 flex flex-col'>
+          <VerticalTimeline>
+            {experiences.map((experience, index) => (
+              <ExperienceCard key={`experience-${index}`} experience={experience} />
+            ))}
+          </VerticalTimeline>
+        </div>
+      </>
+    </LazyMotion>
   );
 };
 
