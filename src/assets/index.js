@@ -1,5 +1,7 @@
 import logo from "./others/logo.svg";
 import photo from "./others/photo.webp";
+import photo800 from "./others/photo-800.webp";
+import photo400 from "./others/photo-400.webp";
 import backend from "./others/backend.webp";
 import creator from "./others/creator.webp";
 import mobile from "./others/mobile.webp";
@@ -66,6 +68,8 @@ import modrenpinkpurplecryptolandingpage from "./projects/modrenpinkpurplecrypto
 export {
   logo,
   photo,
+  photo800,
+  photo400,
   backend,
   creator,
   mobile,

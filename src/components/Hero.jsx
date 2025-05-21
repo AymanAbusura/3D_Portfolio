@@ -6,7 +6,7 @@ import resumeEnglish from '../assets/resume/ResumeEN.pdf';
 import resumeRussian from '../assets/resume/ResumeRU.pdf';
 import { github, linkedin, hh, habr, telegram } from "../assets";
 import { useTranslation } from 'react-i18next';
-import { photo } from '../assets';
+import { photo800, photo400 } from '../assets';
 
 const textVariant = {
   hidden: { opacity: 0, y: 30 },
@@ -126,12 +126,27 @@ const Hero = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, ease: 'easeOut', delay: 0.3 }}
           >
-            <img
-              src={photo}
-              alt="Hero"
-              className="w-full h-full object-cover"
-              loading="lazy"
-            />
+            <picture>
+  <source srcSet={photo800} media="(min-width: 768px)" type="image/webp" />
+  <source srcSet={photo400} media="(min-width: 480px)" type="image/webp" />
+  <img
+    src={photo400}
+    alt="Hero"
+    className="w-full h-full object-cover"
+    loading="lazy"
+  />
+</picture>
+
+            {/* <picture>
+              <source srcSet={photo} media="(min-width: 768px)" type="image/webp" />
+              <source srcSet={photo} media="(min-width: 480px)" type="image/webp" />
+              <img
+                src={photo}
+                alt="Hero"
+                className="w-full h-full object-cover"
+                loading="lazy"
+              />
+            </picture> */}
           </motion.div>
         )}
       </div>
