@@ -1,12 +1,11 @@
 import { BrowserRouter } from "react-router-dom";
 
-import { GoogleAnalytics, About, Contact, Experience, Certification, Hero, Navbar, Tech, Projects, StarsCanvas, Footer, Top } from './components'
+import { About, Contact, Experience, Certification, Hero, Navbar, Tech, Projects, StarsCanvas, Footer, Top } from './components'
 
 const App = () => {
   return (
     <BrowserRouter>
       <div className="relative z-0 bg-primary">
-        <GoogleAnalytics />
         <div className="relative">
           <Navbar />
           <Hero />
