@@ -78,9 +78,9 @@ const About = () => {
                   src={photo400}
                   alt="Ayman"
                   width={250}
-                  height={250}
+                  height={333}
                   fetchpriority="high"
-                  className={`${isMobile ? 'hidden' : 'w-[250px] rounded-[20px] min-h-[250px] flex justify-evenly items-center flex-col'}`}
+                  className={`${isMobile ? 'hidden' : 'w-[250px] rounded-[20px] min-h-[333px] flex justify-evenly items-center flex-col'}`}
                   loading={isMobile ? "lazy" : undefined}
                 />
               </picture>
