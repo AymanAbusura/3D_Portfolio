@@ -1,4 +1,4 @@
-import { Suspense, lazy, useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 
 import { styles } from "../styles";
@@ -6,8 +6,7 @@ import resumeEnglish from '../assets/resume/ResumeEN.pdf';
 import resumeRussian from '../assets/resume/ResumeRU.pdf';
 import { github, linkedin, hh, habr, telegram } from "../assets";
 import { useTranslation } from 'react-i18next';
-
-const HeroImage = lazy(() => import('./HeroImage'));
+import { photo } from '../assets';
 
 const textVariant = {
   hidden: { opacity: 0, y: 30 },
@@ -72,7 +71,7 @@ const Hero = () => {
           }}
         >
           <motion.h1 className={`${styles.heroHeadText} text-white`} variants={textVariant}>
-            {t('hero.greeting', 'Hi, I\'m')} <span className="text-purple-500">{t('hero.name', 'Ayman')}</span>
+            {t('hero.greeting', 'Hi, I\'m')} <span className="text-custom-purple">{t('hero.name', 'Ayman')}</span>
           </motion.h1>
 
           <motion.p className={`${styles.heroSubText} mt-2 text-white-100`} variants={textVariant}>
@@ -83,7 +82,7 @@ const Hero = () => {
             <a
               href={resumeLink}
               download={resumeFileName}
-              className="relative bg-tertiary py-4 px-10 rounded-xl outline-none text-white font-bold shadow-md shadow-primary hover:bg-[#915EFF] z-30 inline-block text-center"
+              className="relative bg-tertiary py-4 px-10 rounded-xl outline-none text-white font-bold shadow-md shadow-primary hover:bg-[#804dee] z-30 inline-block text-center"
             >
               {t("hero.resume")}
             </a>
@@ -111,7 +110,7 @@ const Hero = () => {
                 }
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full bg-white/10 hover:bg-[#915EFF] flex items-center justify-center transition duration-300"
+                className="w-10 h-10 rounded-full bg-white/10 hover:bg-[#804dee] flex items-center justify-center transition duration-300"
                 variants={iconVariant}
               >
                 <img src={icon} alt="social-icon" className="w-5 h-5 object-contain" loading="lazy" />
@@ -121,9 +120,19 @@ const Hero = () => {
         </motion.div>
 
         {!isMobile && (
-          <Suspense fallback={null}>
-            <HeroImage />
-          </Suspense>
+          <motion.div
+            className="w-[400px] h-[400px] rounded-full overflow-hidden"
+            initial={{ opacity: 0, x: 50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, ease: 'easeOut', delay: 0.3 }}
+          >
+            <img
+              src={photo}
+              alt="Hero"
+              className="w-full h-full object-cover"
+              loading="lazy"
+            />
+          </motion.div>
         )}
       </div>
     </section>

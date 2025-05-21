@@ -1,6 +1,5 @@
 import { EarthCanvas, BallCanvas, StarsCanvas } from './canvas';
 import GoogleAnalytics from './GoogleAnalytics';
-import ParticlesBackground from './ParticlesBackground';
 import Hero from './Hero';
 import Navbar from './Navbar';
 import About from './About';
@@ -15,7 +14,6 @@ import Top from './Top';
 
 export {
   GoogleAnalytics,
-  ParticlesBackground,
   Hero,
   Navbar,
   About,

@@ -8,7 +8,6 @@ const App = () => {
       <div className="relative z-0 bg-primary">
         <GoogleAnalytics />
         <div className="relative">
-          {/* <ParticlesBackground /> */}
           <Navbar />
           <Hero />
         </div>

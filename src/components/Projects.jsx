@@ -6,7 +6,6 @@ import { motion, AnimatePresence } from "framer-motion";
 import { styles } from "../styles";
 import { github, demo } from "../assets";
 import { SectionWrapper } from "../hoc";
-// import { projects, petProjects } from "../constants";
 import { getProjects, getPetProjects } from "../constants/index-translated";
 import { fadeIn, textVariant } from "../utils/motion";
 import { useTranslation } from 'react-i18next';
@@ -169,7 +168,7 @@ const Projects = () => {
         <div className="mt-10 flex justify-center">
           <button
             onClick={handleLoadMore}
-            className="bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary hover:bg-[#915EFF]"
+            className="bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary hover:bg-[#804dee]"
           >
             {t("works.loadMore")}
           </button>

@@ -12,6 +12,7 @@ export const theme = {
       "black-300": "#1C1C21",
       "white-100": "#f3f3f3",
       "white-500": "#62646C",
+      "custom-purple": "#804dee",
       p1: '#2EF2FF',
       p2: '#3C52D9',
       p3: '#C8EA80',
