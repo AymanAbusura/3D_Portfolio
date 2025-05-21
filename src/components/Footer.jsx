@@ -7,7 +7,7 @@ const Footer = () => {
 
     return (
       <footer className="c-space pt-7 pb-3 border-t border-black-300 flex justify-between items-center flex-wrap gap-5">
-        <div className="text-white-500 flex gap-2">
+        <div className="text-secondary flex gap-2">
           <p>{t("footer.box1")}</p>
           <p>|</p>
           <p>{t("footer.box2")}</p>
@@ -31,7 +31,7 @@ const Footer = () => {
           </a>
         </div>
         
-        <p className="text-white-500">{t("footer.box3")}</p>
+        <p className="text-secondary">{t("footer.box3")}</p>
       </footer>
     );
   };
