@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { AiOutlineCaretUp, AiOutlineCaretDown } from 'react-icons/ai';
 import { translate } from '../assets';
 
 function LanguageSelector() {
@@ -11,15 +10,37 @@ function LanguageSelector() {
     i18n.changeLanguage(lang);
   };
 
+  const CaretDown = (
+    <svg
+      className="h-8 lg:w-4 md:w-5 sm:w-5"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7"></path>
+    </svg>
+  );
+
+  const CaretUp = (
+    <svg
+      className="h-8 lg:w-4 md:w-5 sm:w-5"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path strokeLinecap="round" strokeLinejoin="round" d="M5 15l7-7 7 7"></path>
+    </svg>
+  );
+
   return (
     <div className="relative flex flex-col items-center">
       <button className="flex items-center" onClick={() => setIsOpen(!isOpen)}>
         <img src={translate} className="w-7 h-7" alt="Translate Icon" />
-          {!isOpen ? (
-            <AiOutlineCaretDown className="h-8 lg:w-4 md:w-5 sm:w-5" />
-          ) : (
-            <AiOutlineCaretUp className="h-8 lg:w-4 md:w-5 sm:w-5" />
-          )}
+        {!isOpen ? CaretDown : CaretUp}
       </button>
 
       {isOpen && (

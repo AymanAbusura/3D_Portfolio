@@ -39,7 +39,7 @@ const Hero = () => {
   }, [isMobile]);
 
   return (
-    <section className="relative w-full h-[75vh] mx-auto z-40" aria-label="Hero section">
+    <section className="relative w-full h-screen mx-auto z-40" aria-label="Hero section">
       <div className={`absolute inset-0 top-[120px] max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-10 max-[320px]:gap-1 z-40`}>
         
         <LazyMotion features={domAnimation}>
