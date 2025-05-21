@@ -10,13 +10,13 @@ import { useTranslation } from 'react-i18next';
 import { photo800, photo400 } from '../assets';
 
 const textVariant = {
-  hidden: { opacity: 0, y: 30 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
+  hidden: { opacity: 0, y: 10 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.3 } },
 };
 
 const iconVariant = {
   hidden: { opacity: 0, y: 10 },
-  visible: { opacity: 1, y: 0 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.3 } },
 };
 
 const Hero = () => {
@@ -48,20 +48,18 @@ const Hero = () => {
             initial="hidden"
             animate="visible"
             variants={{
-              visible: { transition: { staggerChildren: 0.3 } },
+              visible: { transition: { staggerChildren: 0 } },
             }}
           >
             <m.div
               className="w-5 h-5 rounded-full bg-[#915EFF]"
-              initial={{ scale: 0, opacity: 0 }}
+              initial={{ scale: 1, opacity: 1 }}
               animate={{ scale: 1, opacity: 1 }}
-              transition={{ duration: 0.5, ease: 'easeOut' }}
             />
             <m.div
               className="w-1 sm:h-80 h-40 violet-gradient origin-top"
-              initial={{ scaleY: 0 }}
+              initial={{ scaleY: 1 }}
               animate={{ scaleY: 1 }}
-              transition={{ duration: 0.8, ease: 'easeOut', delay: 0.2 }}
             />
           </m.div>
 
@@ -70,7 +68,7 @@ const Hero = () => {
             initial="hidden"
             animate="visible"
             variants={{
-              visible: { transition: { staggerChildren: 0.2 } },
+              visible: { transition: { staggerChildren: 0 } },
             }}
           >
             <m.h1 className={`${styles.heroHeadText} text-white`} variants={textVariant}>
@@ -96,7 +94,7 @@ const Hero = () => {
               initial="hidden"
               animate="visible"
               variants={{
-                visible: { transition: { staggerChildren: 0.1 } },
+                visible: { transition: { staggerChildren: 0 } },
               }}
             >
               {[github, linkedin, hh, habr, telegram].map((icon, index) => (
@@ -124,10 +122,10 @@ const Hero = () => {
 
           {!isMobile && (
             <m.div
-              className="w-[250px] h-[250px] rounded-full overflow-hidden"
+              className="w-[300px] h-[300px] rounded-full overflow-hidden"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
-              transition={{ duration: 0.6, ease: 'easeOut' }}
+              transition={{ duration: 0.4, ease: 'easeOut' }}
             >
               <picture>
                 <source srcSet={photo800} media="(min-width: 768px)" type="image/webp" />
@@ -135,8 +133,8 @@ const Hero = () => {
                 <img
                   src={photo400}
                   alt="Hero"
-                  width={250}
-                  height={250}
+                  width={300}
+                  height={300}
                   fetchpriority="high"
                   className="w-full h-full object-cover"
                 />

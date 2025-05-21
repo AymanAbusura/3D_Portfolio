@@ -166,7 +166,6 @@ const Projects = () => {
         />
       </div>
 
-      {/* Animated projects container with key to trigger re-animation on toggle */}
       <m.div
         key={showProjects ? "projects" : "pet-projects"}
         className="mt-10 flex flex-wrap md:justify-center gap-7"
