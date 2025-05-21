@@ -2,7 +2,7 @@ import logo from "./others/logo.svg";
 import photo from "./others/photo.webp";
 import photo800 from "./others/photo-800.webp";
 import photo400 from "./others/photo-400.webp";
-import backend from "./others/backend.webp";
+import backend from "./others/backend1.webp";
 import creator from "./others/creator.webp";
 import mobile from "./others/mobile.webp";
 import web from "./others/web.webp";
