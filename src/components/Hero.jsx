@@ -124,8 +124,8 @@ const Hero = () => {
                   <img
                     src={photo400}
                     alt="Hero"
-                    width={3024}
-                    height={4032}
+                    width={400}
+                    height={533}
                     fetchpriority="high"
                     className="w-full h-full object-cover"
                   />
