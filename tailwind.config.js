@@ -33,9 +33,6 @@ export const theme = {
     screens: {
       xs: "450px",
     },
-    backgroundImage: {
-      "hero-pattern": "url('/src/assets/herobg.png')",
-    },
   },
 };
 export const plugins = [];
