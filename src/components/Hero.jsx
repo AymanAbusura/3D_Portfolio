@@ -43,7 +43,7 @@ const Hero = () => {
       <div className={`absolute inset-0 top-[120px] max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-10 max-[320px]:gap-1 z-40`}>
         <LazyMotion features={domAnimation}>
           <m.div
-            className="flex flex-row items-start gap-10 mt-5"  // Main horizontal flex container
+            className="flex flex-row items-start gap-10 mt-5"
             initial="hidden"
             animate="visible"
             variants={{ visible: { transition: { staggerChildren: 0.1 } } }}
@@ -124,8 +124,8 @@ const Hero = () => {
                   <img
                     src={photo400}
                     alt="Hero"
-                    width={250}
-                    height={250}
+                    width={3024}
+                    height={4032}
                     fetchpriority="high"
                     className="w-full h-full object-cover"
                   />
