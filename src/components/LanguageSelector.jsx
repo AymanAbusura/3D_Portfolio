@@ -1,13 +1,18 @@
-import { useState } from 'react';
-import { useTranslation } from 'react-i18next';
-import { translate } from '../assets';
+import { useState } from "react";
+import { useTranslation } from "react-i18next";
+import { useNavigate, useParams } from "react-router-dom";
+import { translate } from "../assets";
 
 function LanguageSelector() {
   const [isOpen, setIsOpen] = useState(false);
   const { i18n } = useTranslation();
+  const navigate = useNavigate();
+  const { lang } = useParams();
 
-  const handleLanguageChange = (lang) => {
-    i18n.changeLanguage(lang);
+  const handleLanguageChange = (newLang) => {
+    i18n.changeLanguage(newLang.toUpperCase());
+    navigate(`/${newLang}`);
+    setIsOpen(false);
   };
 
   const CaretDown = (
@@ -17,7 +22,6 @@ function LanguageSelector() {
       stroke="currentColor"
       strokeWidth="2"
       viewBox="0 0 24 24"
-      xmlns="http://www.w3.org/2000/svg"
     >
       <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7"></path>
     </svg>
@@ -30,7 +34,6 @@ function LanguageSelector() {
       stroke="currentColor"
       strokeWidth="2"
       viewBox="0 0 24 24"
-      xmlns="http://www.w3.org/2000/svg"
     >
       <path strokeLinecap="round" strokeLinejoin="round" d="M5 15l7-7 7 7"></path>
     </svg>
@@ -44,16 +47,20 @@ function LanguageSelector() {
       </button>
 
       {isOpen && (
-        <div className="lg:bg-black sm:bg-transparent text-white lg:absolute sm:none top-10 flex flex-col items-start rounded-lg p-2 w-full">
+        <div className="lg:bg-black sm:bg-transparent text-white lg:absolute top-10 flex flex-col items-start rounded-lg p-2 w-full">
           <button
-            className="text-secondary hover:text-white text-[18px] font-medium cursor-pointer"
-            onClick={() => handleLanguageChange('EN')}
+            className={`text-secondary hover:text-white text-[18px] font-medium cursor-pointer ${
+              lang === "en" ? "text-white" : ""
+            }`}
+            onClick={() => handleLanguageChange("en")}
           >
             EN
           </button>
           <button
-            className="text-secondary hover:text-white text-[18px] font-medium cursor-pointer"
-            onClick={() => handleLanguageChange('RU')}
+            className={`text-secondary hover:text-white text-[18px] font-medium cursor-pointer ${
+              lang === "ru" ? "text-white" : ""
+            }`}
+            onClick={() => handleLanguageChange("ru")}
           >
             RU
           </button>

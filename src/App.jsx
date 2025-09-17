@@ -1,5 +1,6 @@
-import { BrowserRouter } from "react-router-dom";
-import { Suspense, lazy } from "react";
+import { Routes, Route, Navigate, useParams } from "react-router-dom";
+import { Suspense, useEffect, lazy } from "react";
+import { useTranslation } from "react-i18next";
 
 const Hero = lazy(() => import("./components/Hero"));
 const Navbar = lazy(() => import("./components/Navbar"));
@@ -19,30 +20,44 @@ const Loader = () => (
   </div>
 );
 
-const App = () => {
-  return (
-    <BrowserRouter>
-        <div className="relative z-0 bg-primary">
-          <div className="relative">
-            <Navbar />
-            <Hero />
-          </div>
-          <Suspense fallback={<Loader />}>
-            <About />
-            <Experience />
-            <Certification />
-            <Tech />
-            <Projects />
-            <div className="relative z-0">
-              <Contact />
-              <StarsCanvas />
-            </div>
-            <Footer />
-            <Top />
-          </Suspense>
-        </div>
-    </BrowserRouter>
-  );
-};
+function Page() {
+  const { lang } = useParams();
+  const { i18n } = useTranslation();
 
-export default App;
+  useEffect(() => {
+    if (lang) {
+      i18n.changeLanguage(lang.toUpperCase());
+    }
+  }, [lang, i18n]);
+
+  return (
+    <div className="relative z-0 bg-primary">
+      <div className="relative">
+        <Navbar />
+        <Hero />
+      </div>
+      <Suspense fallback={<Loader />}>
+        <About />
+        <Experience />
+        <Certification />
+        <Tech />
+        <Projects />
+        <div className="relative z-0">
+          <Contact />
+          <StarsCanvas />
+        </div>
+        <Footer />
+        <Top />
+      </Suspense>
+    </div>
+  );
+}
+
+export default function App() {
+  return (
+    <Routes>
+      <Route path="/" element={<Navigate to="/en" replace />} />
+      <Route path="/:lang" element={<Page />} />
+    </Routes>
+  );
+}

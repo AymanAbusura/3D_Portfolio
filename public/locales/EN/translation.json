@@ -2,7 +2,7 @@
     "navbar": 
     {
         "box1": "Ayman Abusura",
-        "position": "Frontend Developer",
+        "position": "Web Developer",
         "box2": "About",
         "box3": "Work",
         "box4": "Projects",
@@ -253,7 +253,7 @@
         "header2": "Contact",
         "form": 
         {
-            "field1": "Name",
+            "field1": "Name/Organization Name",
             "input1": "",
             "field2": "Email",
             "input2": "",
@@ -269,6 +269,6 @@
     {
         "box1": "Terms & Conditions",
         "box2": "Privacy Policy",
-        "box3": "© 2024 Ayman Abusura. All rights reserved."
+        "box3": "© 2025 Ayman Abusura. All rights reserved."
     }
 }

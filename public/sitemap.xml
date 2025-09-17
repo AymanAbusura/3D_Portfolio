@@ -1,9 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="https://www.w3.org/1999/xhtml">
     
+    <!-- Главная /en -->
     <url>
-        <loc>https://aymanabusura.vercel.app/</loc>
-        <lastmod>2024-12-04T11:14:08+00:00</lastmod>
+        <loc>https://aymanabusura.vercel.app/en</loc>
+        <lastmod>2025-09-17</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://aymanabusura.vercel.app/en"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://aymanabusura.vercel.app/ru"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://aymanabusura.vercel.app/"/>
+    </url>
+
+    <!-- Главная /ru -->
+    <url>
+        <loc>https://aymanabusura.vercel.app/ru</loc>
+        <lastmod>2025-09-17</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://aymanabusura.vercel.app/en"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://aymanabusura.vercel.app/ru"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://aymanabusura.vercel.app/"/>
     </url>
     
 </urlset>
