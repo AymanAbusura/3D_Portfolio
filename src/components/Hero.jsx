@@ -127,7 +127,7 @@ const Hero = () => {
                     width={400}
                     height={533}
                     fetchpriority="high"
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover object-bottom"
                   />
                 </picture>
               </m.div>
