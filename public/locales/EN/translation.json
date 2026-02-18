@@ -12,14 +12,14 @@
     {
         "greeting": "Hi, I'm",
         "name": "Ayman",
-        "description": "A web developer passionate about building clean, fast, and impactful digital experiences.",
+        "description": "A FullStack developer passionate about building clean, fast, and impactful digital experiences.",
         "resume": "Resume"
     },
     "about": 
     {
         "header1": "INTRODUCTION",
         "header2": "Overview",
-        "description": "I am a Web developer with over 3 years of commercial experience. My core stack includes HTML5, CSS3, JavaScript, React, Vite, and Node.js. During this time, I have developed dozens of landing pages, e-commerce websites, and social application interfaces. I am proficient in responsive, cross-browser, and semantic layout using Flexbox, CSS Grid, and BEM methodology. I have experience integrating with APIs and implementing UI/UX designs from tools like Figma and PNG assets. I am currently seeking a Frontend Developer (React) position where I can apply my experience in building modern user interfaces and grow in areas such as application architecture, performance optimization, and engineering best practices.",
+        "description": "I am a FullStack Developer with over 4 years of commercial experience, specializing in building modern, responsive, and high-performance web applications. I thrive at the intersection of creativity and functionality, transforming UI/UX designs into seamless digital experiences using React, Next.js, Node.js, and modern frontend and backend technologies, including building APIs, server-side functionality, and automation tools. I excel at crafting cross-browser, semantic layouts with a focus on maintainable and scalable code, while also developing backend solutions that power complex applications and integrations. Beyond coding, I enjoy solving complex problems, optimizing application performance, and creating tools that simplify workflows such as Telegram bots and mini-applications that automate routine processes and enhance user interaction. I am eager to contribute to a forward-thinking team where I can continue advancing in frontend and backend architecture, performance optimization, and engineering excellence while delivering impactful, full-stack digital experiences.",
         "services": {
             "service1": "Web Developer",
             "service2": "React Developer",
@@ -39,12 +39,19 @@
             "about": "Media buying agency specializing in purchasing traffic on social networks.",
             "description": 
             {
-                "point1": "Responsive Layout and Design: Developed and refined layouts for various devices, ensuring cross-browser and cross-platform compatibility.",
-                "point2": "API Development and Integration: Created and integrated APIs to ensure proper functionality of web applications.",
-                "point3": "Bug Fixes and Code Optimization: Identified and resolved defects, improving the overall user experience by eliminating technical errors.",
-                "point4": "Form Optimization and Enhancement: Enhanced form functionality, including [Implementation of a carousel in the form, Integration of interactive elements (doors, gifts, time, and date), and Development of an anti-duplication script for forms].",
-                "point5": "HTML, CSS, JS Development: Collaborated closely with the development team to enhance web application performance.",
-                "point6": "Content Localization: Reviewed and adapted pre-landing and landing pages for Arabic-speaking users."
+                "point1": "Developed and implemented various services and mini-applications in Telegram.",
+                "point2": "Built a Telegram bot in Node.js to automate routine processes, significantly speeding up and simplifying daily workflows.",
+                "point3": "Created and adapted layouts for multiple devices, ensuring full cross-browser compatibility.",
+                "point4": "Developed and integrated APIs to ensure stable web application performance.",
+                "point5": "Fixed defects and technical issues, improving overall user experience.",
+                "point6": "Enhanced form functionality by adding interactive elements and creating an anti-duplicate script.",
+                "point7": "Optimized web application performance.",
+                "point9": "Adapted landing pages and pre-landing pages for Arabic-speaking users.",
+                "point10": "Mentored front-end colleagues on adaptive/RTL layouts and JavaScript optimization.",
+                "point11": "Built a Playwright project for user-agent emulation.",
+                "point12": "Developed a bot using Puppeteer and Node.js for automated form filling and data submission.",
+                "point13": "Created a web application for generating random user data with country and quantity filters",
+                "point14": "Developed several projects using React/Next.js."
             },
             "date": "Jan 2022 - Present"
         },
