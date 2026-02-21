@@ -39,7 +39,7 @@
             "about": "Media buying agency specializing in purchasing traffic on social networks.",
             "description": 
             {
-                "point1": "Developed and implemented various services and mini-applications in Telegram.",
+                "point1": "Developing services and mini-applications integrated with Telegram bots and Telegram mini apps.",
                 "point2": "Built a Telegram bot in Node.js to automate routine processes, significantly speeding up and simplifying daily workflows.",
                 "point3": "Created and adapted layouts for multiple devices, ensuring full cross-browser compatibility.",
                 "point4": "Developed and integrated APIs to ensure stable web application performance.",
